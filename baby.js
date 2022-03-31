@@ -347,6 +347,7 @@ babyData.map(function (elem) {
     btn2.innerText = "ADD TO CART";
     btn2.setAttribute("class","add")
     btn2.addEventListener("click", function(){
+      console.log("in function");
      addtocart(elem);
     })
 
@@ -356,4 +357,5 @@ babyData.map(function (elem) {
   });
   function addtocart(elem){
     addToCart.push(elem);
+    localStorage.setItem("Cart",JSON.stringify(addToCart));
   }
