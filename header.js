@@ -38,7 +38,7 @@ function bodyPage(){
 var giftPacks=document.querySelector("#giftPacks");
 giftPacks.addEventListener("click", giftPacksPage)
 function giftPacksPage(){
-  window.location.href="header.html";
+  window.location.href="giftPacks.html";
  
 }
 var allProducts=document.querySelector("#allProducts");
