@@ -271,7 +271,7 @@ bestDeals.map(function (elem) {
   var colorRange=[
     {
     image:"https://honasa-mamaearth-production.imgix.net/k/o/kohl-3_3_5.jpg?auto=format&fit=crop&w=768&auto=compress", 
-    name: "Charcoal Black Long Stay Kajal Kohl Pencil With Castor Oil and Chamomile For 11-Hour Smudge-free Stay with Free Sharpener",
+    name: "Charcoal Black Long Stay Kajal Kohl Pencil With Castor Oil ",
     rating:"4.9★",
     price: "499"
     },
@@ -283,7 +283,7 @@ bestDeals.map(function (elem) {
       },
       {
         image:"https://honasa-mamaearth-production.imgix.net/a/r/artboard_1_1.jpg?auto=format&fit=crop&w=584&auto=compress", 
-        name: "Naturally Matte Lip Serum with Vitamin C & E for Upto 12-Hour Long Stay - 3 ml-Caramel Nude",
+        name: "Naturally Matte Lip Serum with Vitamin C & E for Upto 12-Hour Long Stay - 3 ml",
         rating:"4.9★",
         price: "599"
         },
