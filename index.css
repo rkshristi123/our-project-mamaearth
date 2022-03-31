@@ -140,7 +140,7 @@ a:hover{
 }
 .carousel-item>img{
     width: 100%;
-    height: 500px;
+    height: 450px;
     margin-top: 10px;
 }
 #myBtn {
@@ -166,7 +166,50 @@ a:hover{
   .carousel-indicators{
     color: rgb(66, 61, 61);
   }
+/* *********************** */
+/* Chandani's Css */
+#produchSection{
+    width: 85%;
+    height: auto;
+    border: 1px solid blue;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+#description{
+    width: 29%;
+    height: auto;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+}
+.productType{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 30px;
+    border: 1px solid pink;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.productType>h1{
+    font-size: 40px;
+    text-align: center;
+}
+.productType>p{
+    margin-top: 30px;
+    text-align: center;
+}
 
+#produchSection>#products{
+    width: 70%;
+    height: auto;
+    border: 1px solid green;
+}
+
+/* ***************************** */
   #box2{
             
     width:90%;
@@ -307,6 +350,9 @@ h2{
 }
 #my>div>div{
     margin-left: 20px;
+}
+#pic>img{
+    width: 100%;
 }
 
     
