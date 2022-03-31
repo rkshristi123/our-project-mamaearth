@@ -1,0 +1,469 @@
+
+   
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+
+    <script src="https://kit.fontawesome.com/a9dbdcc6e4.js" crossorigin="anonymous"></script>
+    <!-- <script
+    src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans&family=Poppins:wght@500;700;900&family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+<style>
+#red{
+    width: inherit;
+    display: flex;
+    -webkit-box-pack: justify;
+    padding-left: 40px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    background-color: #d4424c;
+    color: white;
+    height: 34px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#red>a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+}
+#red>a>img{
+    height: 30px;
+}
+
+#midheader{
+    width: 90%;
+    margin: auto;
+    height: 70px;
+    
+    display: flex;
+    padding-left: 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+#imSearch{
+    width: 63%;
+    display: flex;
+    padding-left: 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+}
+#imSearch>img{
+    width: 170px; 
+    height: 55%;
+}
+#searchSection{
+    width: 75%;
+    /* border: 1px solid ;
+    border-color: lightgrey; */
+    border-radius: 5px;
+}
+#searchSection>#searchBox{
+    width: 79%;
+    height:40px;
+    border: none;
+    border: 1px solid;
+    border-color: lightgray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 18px;
+}
+
+#search{
+    height: 40px;
+    width: 19%;
+    margin-left:-5px;
+    border: none;
+    background-color: #00afef;
+    color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 18px;
+}
+#profileSection{
+    width: 12%;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+a:hover{
+    text-decoration: none;
+}
+#profileSection>a>div{
+    font-size: 18px;
+    color: gray;
+    text-decoration: none;
+}
+#profileSection>a>div>i{
+    font-size: 24px;
+    color: #00afef;
+}
+/* navbar-------------------------------- */
+#navbarStart{
+    height: 40px;
+    border-top: 1px solid lightgray ;
+    width: 100%;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+#navbarStart>div{
+    height: inherit;
+    width: 65%;
+    margin-left: 5%;
+    display: flex;
+    padding-left: 20px;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: #6f7d98;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+    /***** header css end*****/
+#center{
+   
+   width: 90%;
+   display: flex;
+   padding-left: 100px;
+   margin: auto;
+   margin-top: 15px;
+   /* */
+}
+#centerLeft{
+   width: 55%;
+   height: auto;
+   padding-bottom: 50px;
+   padding-left: 20px;
+   border: 1px solid lightgray; 
+}
+#centerLeft>#instruction{
+   padding-top: 20px;
+   display: flex;
+   font-size: 18px;
+   align-items: center;
+   font-family: 'Roboto', sans-serif;
+}
+#centerLeft>#instruction>#button{
+   width: 130px;
+   height: 40px;
+   margin-left: 20px;
+   border-radius: 5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border:2px solid #00afef ;
+   background-color: white;
+   color: #00afef;
+   font-size: 15px;
+   cursor: pointer;
+}
+#centerLeft>#instruction>#button:hover{
+   color: white;
+   background-color: #00afef;
+}
+
+#delAddress{
+   width: 99%;
+   margin-top: 30px;
+   font-size: 20px;
+   display: flex;
+   flex-direction: column;
+   font-family: 'Roboto', sans-serif;
+}
+#delAddress>div{
+   padding-top:20px ;
+}
+#delAddress>div>.name{
+   width: 48%;
+   height: 40px;
+   font-size: 16px;
+   border: none;
+   border: 1px solid lightgray;
+   border-radius: 5px;
+}
+#delAddress>div>.contact{
+   width: 48%;
+   height: 40px;
+   font-size: 16px;
+   border: none;
+   border: 1px solid lightgray;
+   border-radius: 5px;
+}
+#delAddress>div>.pcs{
+   width: 31.5%;
+   height: 40px;
+   font-size: 16px;
+   border: none;
+   border: 1px solid lightgray;
+   border-radius: 5px;
+}
+#delAddress>div>#address{
+   width: 97.4%;
+   height: 40px;
+   font-size: 16px;
+   border: none;
+   border: 1px solid lightgray;
+   border-radius: 5px;
+}
+#typeAddress{
+   width: 40%;
+   padding-top: 30px;
+   font-size: 18px;
+   font-family: 'Roboto', sans-serif;
+   color: gray;
+}
+#typeAddress>div{
+    padding-top: 30px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+}
+#typeAddress>div>div{
+    height: 40px;
+    width: 30%;
+   border-radius: 20px;
+   border: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: lightgray;
+   color: gray;
+   cursor: pointer;
+
+
+}
+#paymentMethod{
+    padding-top: 40px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+#pMethod{
+    width: 30%;
+    padding-top: 5px;
+    margin-top: 15px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: auto;
+    border-radius: 5px;
+}
+#pMethod>div{
+    border: 1px solid  lightgray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+
+}
+#pMethod>div>input{
+    width: 30px;
+    height: 30px;
+}
+#pMethod>#upi{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+#pMethod>#cod{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+#centerRight{
+   width: 44%;
+   height: 500px;
+   border: 1px solid lightgray; 
+}
+
+
+</style>
+</head>
+<body>
+    <div id="red">
+        <a href="#">Asia's 1st brand with MADE SAFE Certified Products</a>
+        <a href="#">Free Shipping Above 399 | COD Available | Extra 5% OFF on Prepaid Orders | Shpo Now</a>
+        <a href="#"> <i class="fa-regular fa-user"></i></a>
+    </div>
+    <div id="midheader"><!-- middle header start  -->
+          <div id="imSearch">
+              <img src="https://mamaearthp.imgix.net/wysiwyg/mamaearth-logo.png?auto=format&fit=scale">
+              <div id="searchSection">
+                  <!-- <input type="text" id="searchBox" placeholder=" Search for products...">
+                  <button id="search"><i class="fa-solid fa-magnifying-glass"></i>&nbsp;&nbsp;Search</button> -->
+              </div>
+          </div> 
+     <!-- profile start  -->
+    <div id="profileSection">
+       <!-- <a href="addTCart.html"><div> <i class="fa-solid fa-cart-shopping"></i>&nbsp;
+          Cart
+        </div>
+      </a> 
+       <a href="login.html"> <div>
+          <i class="fa-regular fa-user"></i>&nbsp;
+          Login
+        </div>
+      </a> -->
+      
+    </div><!-- profile end    -->
+     
+    </div> <!-- middle header end -->
+  
+  
+    <div id="navbarStart"><!-- navbar start  -->
+      <div>
+        <div id="home" class="active">HOME</div>
+        <div id="baby">BABY</div>
+        <div id="beauty">BEAUTY</div>
+        <div id="hair">HAIR</div>
+        <div id="face">FACE</div>
+        <div id="body">BODY</div>
+        <div id="giftPacks">GIFT PACKS</div>
+        <div id="allProducts">ALL PRODUCTS</div>
+        <div id="blog">BLOG</div>
+        <div id="plantGoodness">PLANT GOODNESS</div>
+        <div id="storeLocator">STORE LOCATOR</div>
+      </div>
+    </div> <!-- navbar end -->
+<div id="center">
+    <div id="centerLeft">
+        <div id="instruction">Login to see your existing offers
+            <div id="button">Login/Signup</div>
+        </div>
+        <form action="">
+            <!-- delevery address------------------ -->
+            <div id="delAddress">
+                Delivery Address
+                <div><input class="name" type="text" id="fName" placeholder="First Name*" required>
+                    <input  class="name" type="text" id="lName" placeholder="Last Name*" required></div>
+                <div>
+                    <input class="contact" type="email" id="email" placeholder="Email ID*" required>
+                    <input class="contact" type="tel" id="mobNo" placeholder="Mobile No.*" required>
+                </div>
+                <div>
+                    <input class="pcs" type="number" id="pinCode" placeholder="PIN Code*" required>
+                    <input class="pcs" type="text" id="city" placeholder="City*" required>
+                    <input class="pcs" type="text" id="state" placeholder="State*" required>
+                </div>
+                <div><input type="text" id="address" placeholder="Address(House No, Building, Street, Area)*" required></div>
+            </div> <!-- end of delevery address------------------ -->
+            
+            <div id="typeAddress"> <!-- start of address type------------------ -->
+                Select the type of the Address
+            <div>
+                <div id="homeAddress">Home</div>
+               <div id="workAddress" >Work</div>
+               <div id="otherAddress">Other</div>
+            </div>
+               
+            </div> <!-- end of address type------------------ -->
+            <div id="paymentMethod">
+                Choose payment method
+              <div id="pMethod">
+                  <div id="upi"> <input type="radio"  name="payOption" value="UPI"/> &nbsp;UPI</div>
+                  <div><input type="radio" name="payOption" value="Credit/Debit Car"/> &nbsp;Credit/Debit Card</div>
+                  <div><input type="radio" name="payOption" value="Net Banking"/>&nbsp; Net Banking</div>
+                  <div><input type="radio" name="payOption" value="Wallets"/>&nbsp; Wallets</div>
+                  <div id="cod"><input type="radio"  name="payOption" value="Cash on Delivery"/> &nbsp;Cash on Delivery</div>
+              </div>
+              <div></div>
+            </div>
+        </form>
+    </div>
+    <div id="centerRight">
+
+    </div>
+</div>
+
+
+</body>
+</html>
+<script>
+// headerPage js**************************************
+
+    var home=document.querySelector("#home");
+home.addEventListener("click", homePage)
+function homePage(){
+  window.location.href="header.html";
+ 
+}
+var baby=document.querySelector("#baby");
+baby.addEventListener("click", babyPage)
+function babyPage(){
+  window.location.href="baby.html";
+ 
+}
+var beauty=document.querySelector("#beauty");
+beauty.addEventListener("click", beautyPage)
+function beautyPage(){
+  window.location.href="beauty.html";
+ 
+}
+var hair=document.querySelector("#hair");
+hair.addEventListener("click", hairPage)
+function hairPage(){
+  window.location.href="hair.html";
+ 
+}
+var face=document.querySelector("#face");
+face.addEventListener("click", facePage)
+function facePage(){
+  window.location.href="face.html";
+ 
+}
+var body=document.querySelector("#body");
+body.addEventListener("click", bodyPage)
+function bodyPage(){
+  window.location.href="body.html";
+ 
+}
+var giftPacks=document.querySelector("#giftPacks");
+giftPacks.addEventListener("click", giftPacksPage)
+function giftPacksPage(){
+  window.location.href="header.html";
+ 
+}
+var allProducts=document.querySelector("#allProducts");
+allProducts.addEventListener("click", allProductsPage)
+function allProductsPage(){
+  window.location.href="allProducts.html";
+ 
+}
+var blog=document.querySelector("#blog");
+blog.addEventListener("click", blogPage)
+function blogPage(){
+  window.location.href="blog.html";
+ 
+}
+var plantGoodness=document.querySelector("#plantGoodness");
+plantGoodness.addEventListener("click", plantGoodnessPage)
+function plantGoodnessPage(){
+  window.location.href="plantGoodness.html";
+ 
+}
+var storeLocator=document.querySelector("#storeLocator");
+storeLocator.addEventListener("click", storeLocatorPage)
+function storeLocatorPage(){
+  window.location.href="storeLocator.html";
+ 
+}
+console.log("Hello");
+// end of header page js*****************************
+
+</script>
