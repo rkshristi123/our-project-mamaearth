@@ -171,7 +171,7 @@ a:hover{
 #produchSection{
     width: 85%;
     height: auto;
-    border: 1px solid blue;
+   
     margin: auto;
     display: flex;
     justify-content: space-around;
@@ -182,16 +182,16 @@ a:hover{
     padding-top: 30px;
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
+    
 }
 .productType{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     margin-top: 30px;
-    border: 1px solid pink;
-    padding-top: 100px;
+    
+    padding-top: 120px;
     padding-bottom: 100px;
 }
 .productType>h1{
@@ -200,30 +200,118 @@ a:hover{
 }
 .productType>p{
     margin-top: 30px;
+    font-size: 18px;
     text-align: center;
 }
-
+.productType>button{
+    font-size: 18px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 8px;
+    background-color: #00AFEF;
+    color: white;
+    font-weight: bold;
+    border:0px
+}
 #produchSection>#products{
     width: 70%;
     height: auto;
-    border: 1px solid green;
-}
-
-/* ***************************** */
-  #box2{
-            
-    width:90%;
+    margin-right: 70px;
+    display: flex;
+    flex-direction: column;
     
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-     grid-template-rows: repeat(4,auto);
-    margin:auto;
-    gap:30px;
-    margin-top:40px ;
-
-
 }
-#box2>div{
+#bestSellers{
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+    
+    margin-top: 20px;
+}
+#bestDealers{
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+    
+    margin-top: 20px;
+}
+#colorCare{
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+    
+    margin-top: 20px;  
+}
+#onionRange{
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; 
+}
+#vitaminC{
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+#ubtan{
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+/* js styling************ */
+.one{
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align:center;
+   border:"0.5px dotted rgb(223, 213, 213)";
+   height: 480px;
+   margin-top: 20px;
+   
+   }   
+   .btn{
+       width: 20%;
+    background-color:#6DA523 ;
+    color:white;
+    padding: 3px 3px 3px 3px;
+    border-radius: 5px;
+    font-size: 14px;
+    border:0px;
+    margin-left: 40%;
+   }
+   .pr{
+    color:rgb(54, 49, 49);
+    font-size: 17px;
+    font-weight: bold;
+   }
+   .name{
+    font-size: 14px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color:rgb(104, 99, 99)
+   }
+   .add{
+
+      width: 90%;
+      margin-left: 5%;
+      height: 50px;
+   background-color:white ;
+      color: #00AFEF;
+      border: 1px solid rgb(221, 209, 209);
+      border-radius: 0px;
+      margin-top: 15px;
+     cursor: pointer;
+     font-size: 20px;
+     font-weight: bold;
+   }
+   .add:hover{
+    background-color:#00AFEF; 
+    color:white;
+   }
+
+   #box2>div{
    
     text-align: center;
     padding-bottom: 30px;
@@ -354,28 +442,3 @@ h2{
 #pic>img{
     width: 100%;
 }
-
-    
-/* some useful css for login transform */
-/* position: fixed;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-width: 380px;
-height: 485px;
-z-index: 1001;
-background-color: rgb(255, 255, 255);
-border-radius: 10px;
-overflow: hidden scroll;
-overflow-x: hidden;
-overflow-y: scroll;
-}
-
-.jvjdVl {
-    inset: 0px;
-    position: fixed;
-    background-color: rgb(64, 63, 63);
-    z-index: 5;
-    visibility: visible;
-    opacity: 0.8;
-    transition: opacity 0.2s ease 0s; */
