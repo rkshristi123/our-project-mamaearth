@@ -1,7 +1,7 @@
 var home=document.querySelector("#home");
 home.addEventListener("click", homePage)
 function homePage(){
-  window.location.href="home.html";
+  window.location.href="index.html";
  
 }
 var baby=document.querySelector("#baby");
