@@ -193,16 +193,16 @@ a:hover{
     
 }
 h1{
- font-size: 50px;
+ font-size: 40px;
  color:#333333;
 }
 p{
-    font-size: 25px;
+    font-size: 18px;
     color:rgb(109, 100, 100)
 }
 button{
-    font-size: 20px;
-    padding: 20px 40px 20px 40px;
+    font-size: 18px;
+    padding: 10px 20px 10px 20px;
     border-radius: 8px;
     background-color: #00AFEF;
     color: white;
