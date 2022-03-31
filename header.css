@@ -114,3 +114,35 @@ a:hover{
     cursor: pointer;
 
 }
+
+.slido{
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.carousel-item>img{
+    width: 100%;
+    height: 550px;
+    margin-top: 10px;
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+   
+    color: rgb(66, 61, 61);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  
+  #myBtn:hover {
+    background-color: rgb(66, 61, 61);
+  }
+
+  .carousel-indicators{
+    color: rgb(66, 61, 61);
+  }  
