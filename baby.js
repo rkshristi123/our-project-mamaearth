@@ -314,7 +314,7 @@ var babyData = [
     },
 ]
 
-
+var addToCart=JSON.parse(localStorage.getItem("Cart"))||[];
 
 babyData.map(function (elem) {
     var box = document.createElement("div");
@@ -346,9 +346,14 @@ babyData.map(function (elem) {
     var btn2 = document.createElement("button");
     btn2.innerText = "ADD TO CART";
     btn2.setAttribute("class","add")
-   
+    btn2.addEventListener("click", function(){
+     addtocart(elem);
+    })
 
     box.append(img, name,btn1, priceTag, btn2);
 
     document.querySelector("#container1").append(box);
   });
+  function addtocart(elem){
+    addToCart.push(elem);
+  }
