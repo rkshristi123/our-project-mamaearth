@@ -44,7 +44,7 @@ function giftPacksPage(){
 var allProducts=document.querySelector("#allProducts");
 allProducts.addEventListener("click", allProductsPage)
 function allProductsPage(){
-  window.location.href="allProducts.html";
+  window.location.href="products.html";
  
 }
 var blog=document.querySelector("#blog");
