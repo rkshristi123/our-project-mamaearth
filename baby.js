@@ -252,11 +252,13 @@ var addToCart=JSON.parse(localStorage.getItem("Cart"))||[];
 
 babyData.map(function (elem) {
     var box = document.createElement("div");
-    box.style.border="0.5px dotted rgb(223, 213, 213)"
+    box.style.border="0.5px dotted rgb(223, 213, 213)";
     box.setAttribute("class","one")
     
     var img = document.createElement("img");
     img.src = elem.image;
+    img.style.width="100%";
+    img.style.height="60%";
 
     var name = document.createElement("p");
     name.textContent = elem.name;
