@@ -1,0 +1,295 @@
+
+ body{ 
+    font-family: 'Lato', sans-serif; 
+} 
+#red{
+   width: inherit;
+   display: flex;
+   -webkit-box-pack: justify;
+   padding-left: 40px;
+   padding-right: 30px;
+   box-sizing: border-box;
+   background-color: #d4424c;
+   color: white;
+   height: 34px;
+   justify-content: space-between;
+   align-items: center;
+
+}
+#red>a{
+   color: white;
+   text-decoration: none;
+   font-size: 14px;
+   font-family: 'Lato', sans-serif;
+}
+#red>a>img{
+   height: 30px;
+}
+
+#midheader{
+   width: 90%;
+   margin: auto;
+   height: 70px;
+   
+   display: flex;
+   padding-left: 20px;
+   box-sizing: border-box;
+   justify-content: space-between;
+}
+#imSearch{
+   width: 63%;
+   display: flex;
+   padding-left: 20px;
+   box-sizing: border-box;
+   justify-content: space-between;
+   align-items: center;
+}
+#imSearch>img{
+   width: 170px; 
+   height: 55%;
+}
+#searchSection{
+   width: 75%;
+   /* border: 1px solid ;
+   border-color: lightgrey; */
+   border-radius: 5px;
+}
+#searchSection>#searchBox{
+   width: 79%;
+   height:40px;
+   border: none;
+   border: 1px solid;
+   border-color: lightgray;
+   border-top-left-radius: 5px;
+   border-bottom-left-radius: 5px;
+   font-size: 18px;
+}
+
+#search{
+   height: 40px;
+   width: 19%;
+   margin-left:-5px;
+   border: none;
+   background-color: #00afef;
+   color: white;
+   border-top-right-radius: 5px;
+   border-bottom-right-radius: 5px;
+   font-size: 18px;
+}
+#profileSection{
+   width: 12%;
+  
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   
+}
+a:hover{
+   text-decoration: none;
+}
+#profileSection>a>div{
+   font-size: 18px;
+   color: gray;
+   text-decoration: none;
+}
+#profileSection>a>div>i{
+   font-size: 24px;
+   color: #00afef;
+}
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+
+   margin: 0;
+  padding: 0;
+}
+
+/* dyanamic part start */
+body{
+  background: white;
+
+}
+
+
+/* navabar start */
+#navbar {
+display: flex;
+justify-content: space-evenly;
+background-color: white;
+padding: 10px;
+
+}
+a {
+text-decoration: none;
+color: #483b3b;
+
+}
+/* 
+#navbar a:hover {
+color: rgb(26, 179, 26);
+} */
+#navbar a {
+cursor: pointer;
+}
+
+/* navbar till */
+
+
+/* box append s */
+#box{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+gap: 20px;
+justify-content: space-evenly;
+
+}
+
+#box>div{
+height: auto;
+width: 100%;
+/* border: 1px solid black; */
+box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+margin: auto;
+margin-top: 20%;
+box-sizing: border-box;
+border-radius: 5px;
+padding: 15px;
+
+
+}
+/* 
+#box>div:hover{
+background-color: green;
+} */
+
+#box>div>img{
+height: 70%;
+width: 100%;
+/* border: 1px solid black; */
+background-color: white;
+}
+
+p{
+text-align: center;
+color: black;
+padding: auto;
+margin: auto;
+text-decoration: burlywood;
+color: #333333;
+font: 13.2px lato;
+}
+.btn{
+margin-left: 15px;
+height: 8%;
+width: 95%;
+box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+font-size: 15px;
+color :#00AFEF;
+}
+.btn:hover{
+background-color: rgb(67, 202, 255);
+color: white;
+size: inherit;
+}
+
+
+
+
+
+
+
+.bag{
+height: 5%;
+width: 20%;
+border-radius: 15%;
+margin: auto;
+background-color: rgb(16, 182, 16);
+}
+
+
+
+/* selecttag */
+#sortprice{
+height: 40px;
+width: 30%;
+padding: auto;
+box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+margin-top: 25px;
+margin-left: 65%;
+overflow: hidden;
+border-radius: 2%;
+box-sizing: border-box;
+}
+
+
+/* LOADMORE */
+
+.loadmore{
+height: 100px;
+width: 20%;
+border: 1px solid 0.5px;
+margin: auto;
+text-align: center;
+padding: auto;
+margin-top: 50px;
+}
+
+.loadmore>div{
+height: auto;
+width: 60%;
+border: 1px solid black;
+text-align: center;
+background-color: rgb(60, 190, 241);
+
+}
+
+/* .loadmore>div:hover{
+background-color: rgb(51, 166, 211);
+} */
+.loadmore>div>h4{
+color: white;
+text-align: center;
+
+/* margin: auto; */
+margin-top: 10px;
+}
+.loadmore>div>h4:hover{
+color: green;
+}
+
+/* mediaquery */
+
+
+@media all and (min-width: 401px) and (max-width: 720px){
+#box{
+ grid-template-columns: repeat(2,1fr);
+}
+#navbar{
+ /* display: flex; */
+ flex-direction: row;
+}
+}
+
+@media all and (min-width: 80px) and (max-width: 400px){
+#box{
+ grid-template-columns: repeat(1,1fr);
+}
+#navbar{
+ /* display: flex; */
+ flex-direction: column;
+}
+}
