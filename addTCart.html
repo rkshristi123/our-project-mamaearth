@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans&family=Poppins:wght@500;700;900&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <style>
+        body{
+    background-color: #1c2938;
+}
+.wrapperAll{
+    background-color: #f2f9e8;
+    width: 50%;
+    margin: auto;
+}
+
+#cartHerder{
+    height: 50px;
+    width: 100%;
+    background-color: #d4424c;
+}
+#searchSection{
+    width: 100%;
+    /* border: 1px solid ;
+    border-color: lightgrey; */
+    border-radius: 5px;
+}
+#searchSection>#searchBox{
+    width: 79%;
+    height:35px;
+    border: none;
+    border: 1px solid;
+    border-color: lightgray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 18px;
+}
+
+#search{
+    height: 40px;
+    width: 19%;
+    margin-left:-5px;
+    border: 2px solid #00afef;
+    background-color: #d6f4ff;
+    color: #00afef;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 18px;
+}
+#coupanSection{
+    padding: 20px;
+    margin-top: 20px;
+    background-color: white;
+    font-family: 'Lato', sans-serif; 
+}
+
+#priceSection{
+    padding: 20px;
+    margin-top: 20px;
+    background-color: white;
+    font-family: 'Lato', sans-serif; 
+    display: flex;
+    flex-direction: column;
+}
+#priceSection>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#priceSection>#headingPrice{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid lightgray;
+}
+#priceSection>#headingPrice>#totalPrice{
+    display: flex;
+    align-items: center;
+}
+#priceSection>.des{
+    font-size: 16px;
+    /* padding-top: 5px;
+    padding-bottom: 5px; */
+    /* height: 40px; */
+    border-bottom: 1px solid rgb(245, 242, 242);
+}
+#priceSection>.des>.price{
+    display: flex;
+    align-items: center;
+}
+#priceSection>#proceedPay{
+    background-color: #00afef;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    margin-top: 10px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <div class="wrapperAll">
+        <div id="cartHerder">
+
+        </div>
+        <div id="coupanSection">
+            <p>Have you coupan code?</p>
+            <div id="searchSection">
+                <input type="text" id="searchBox" placeholder=" ENTER COUPON CODE HERE">
+                <button id="search">APPLY</button>
+            </div>
+        </div>
+        <div id="priceSection">
+            <div id="headingPrice">
+                <div id="summary">Price Summary</div>
+                <div id="totalPrice">(<p>249</p>)</div>
+            </div>
+            <div class="des">
+                <div>Order Total</div>
+                <div class="price"> ₹ <p>249.00</p></div>
+            </div>
+            <div class="des">
+                <div>Items Discount</div>
+                <div class="price"> <p>0.00</p></div>
+            </div>
+            <div class="des">
+                <div>Item Total</div>
+                <div class="price">₹<p>249.00</p></div>
+            </div>
+            <div class="des">
+                <div>Coupon Discount</div>
+                <div class="price"><p>0.00</p></div>
+            </div>
+            <div class="des">
+                <div>Shipping</div>
+                <div class="price">₹<p>40</p></div>
+            </div>
+            <div class="des">
+                <div>5% online payment discount</div>
+                <div class="price">-₹<p>12.45</p></div>
+            </div>
+            <div id="proceedPay">
+                <div>PROCEED TO PAY</div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+<script>
+    var procedTopay=document.querySelector("#proceedPay");
+    procedTopay.addEventListener("click", paymentpage);
+    function paymentpage(){
+        window.location.href="paymentPage.html";
+    }
+</script> 
