@@ -1,0 +1,116 @@
+#red{
+    width: inherit;
+    display: flex;
+    -webkit-box-pack: justify;
+    padding-left: 40px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    background-color: #d4424c;
+    color: white;
+    height: 34px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#red>a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+}
+#red>a>img{
+    height: 30px;
+}
+
+#midheader{
+    width: 90%;
+    margin: auto;
+    height: 70px;
+    
+    display: flex;
+    padding-left: 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+#imSearch{
+    width: 63%;
+    display: flex;
+    padding-left: 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+}
+#imSearch>img{
+    width: 170px; 
+    height: 55%;
+}
+#searchSection{
+    width: 75%;
+    /* border: 1px solid ;
+    border-color: lightgrey; */
+    border-radius: 5px;
+}
+#searchSection>#searchBox{
+    width: 79%;
+    height:40px;
+    border: none;
+    border: 1px solid;
+    border-color: lightgray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 18px;
+}
+
+#search{
+    height: 40px;
+    width: 19%;
+    margin-left:-5px;
+    border: none;
+    background-color: #00afef;
+    color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 18px;
+}
+#profileSection{
+    width: 12%;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+a:hover{
+    text-decoration: none;
+}
+#profileSection>a>div{
+    font-size: 18px;
+    color: gray;
+    text-decoration: none;
+}
+#profileSection>a>div>i{
+    font-size: 24px;
+    color: #00afef;
+}
+/* navbar-------------------------------- */
+#navbarStart{
+    height: 40px;
+    border-top: 1px solid lightgray ;
+    width: 100%;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+#navbarStart>div{
+    height: inherit;
+    width: 65%;
+    margin-left: 5%;
+    display: flex;
+    padding-left: 20px;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: #6f7d98;
+    font-size: 15px;
+    cursor: pointer;
+
+}
