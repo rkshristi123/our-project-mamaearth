@@ -12,19 +12,25 @@
     <link rel="stylesheet" href="header.css">
     <style>
         .wrapperAll{
-            width: 40%;
+            width: 30%;
             margin: auto;
             padding-top: 30px;
             padding-bottom: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-family: 'Roboto', sans-serif;
+            margin-top: 50px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
         #heading>h1{
             text-align: center;
-            columns: green;
+            color: green;
         }
        #discription{
            display: flex;
            width: 90%;
            margin: auto;
+           margin-top: 40px;
            justify-content: space-between;
        }
        #imageSection{
@@ -38,6 +44,42 @@
            display: flex;
            justify-content: center;
            align-items: center;
+           font-size: 17px;
+           color: gray;
+       }
+       #loginCred{
+           width: 90%;
+           margin: auto;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           margin-top: 50px;
+       }
+       #mobNo{
+           width: 90%;
+           height: 40px;
+           border: none;
+           border: 1px solid lightgray;
+           margin-bottom: 50px;
+       }
+       #terms{
+           color: gray;
+           margin-bottom: 30px;
+           margin-left: 20px;
+           margin-right: 20px;
+       }
+       #enter{
+           width: 300px;
+           height: 50px;
+           border: 2px solid ;
+           font-size: 17px;
+           background-color: #00afef;
+           color: white;
+           border-radius: 10px;
+       }
+       #loginCred>p{
+           color: #00afef;
        }
     </style>
 </head>
@@ -97,20 +139,43 @@
                 <img src="https://mamaearth.in/static/mamaearth/login.svg" alt="">
             </div>
             <div id="para">
-                Get access to your orders, trackprevious order & Redeem Mama Cash
+                
+               <p>Get access to your orders, trackprevious order & Redeem Mama Cash</p>
             </div>
         </div>
-        <input type="text" id="searchBox" placeholder=" ENTER COUPON CODE HERE">
-                <button id="search">APPLY</button>
+        <div id="loginCred">
+            <input type="text" id="mobNo" placeholder=" Phone Number" required>
+            <div id="terms">
+                By Continuing, you agree to Mamaearth's Terms and Conditions and Privecy Policy.
+            </div>
+           
+            <button id="enter">LOGIN WITH OTP</button>
+            <p> CONTINUE AS GUEST</p>
+        
+        </div>
 
     </div>
 </body>
 </html>
 <script>
-    var procedTopay=document.querySelector("#proceedPay");
-    procedTopay.addEventListener("click", paymentpage);
-    function paymentpage(){
-        window.location.href="paymentPage.html";
+    var enter=document.querySelector("#enter");
+    enter.addEventListener("click",  loginPage);
+    function loginPage(){
+        var mobNumber=document.querySelector("#mobNo").value;
+        if(mobNumber==""){
+            alert("please enter the mobile number");
+        }
+        else{
+            let otp = prompt("Please enter OTP");
+            if (otp == 1234) {
+                
+                window.location.href="index.html";
+            }
+           else{
+               alert("otp is not valid");
+           }
+        }
+        
     }
 </script> 
 <script src="header.js"></script>
