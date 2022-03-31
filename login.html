@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans&family=Poppins:wght@500;700;900&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="header.css">
+    <style>
+        .wrapperAll{
+            width: 40%;
+            margin: auto;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        #heading>h1{
+            text-align: center;
+            columns: green;
+        }
+       #discription{
+           display: flex;
+           width: 90%;
+           margin: auto;
+           justify-content: space-between;
+       }
+       #imageSection{
+           width: 30%;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+       #para{
+           width: 60%;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+    </style>
+</head>
+<body>
+    <div id="red">
+        <a href="#">Asia's 1st brand with MADE SAFE Certified Products</a>
+        <a href="#">Free Shipping Above 399 | COD Available | Extra 5% OFF on Prepaid Orders | Shpo Now</a>
+        <a href="#"> <i class="fa-regular fa-user"></i></a>
+    </div>
+    <div id="midheader"><!-- middle header start  -->
+        <div id="imSearch">
+            <img src="https://mamaearthp.imgix.net/wysiwyg/mamaearth-logo.png?auto=format&fit=scale">
+            <div id="searchSection">
+                <!-- <input type="text" id="searchBox" placeholder=" Search for products...">
+                <button id="search"><i class="fa-solid fa-magnifying-glass"></i>&nbsp;&nbsp;Search</button> -->
+            </div>
+        </div> 
+   <!-- profile start  -->
+  <div id="profileSection">
+     <!-- <a href="addTCart.html"><div> <i class="fa-solid fa-cart-shopping"></i>&nbsp;
+        Cart
+      </div>
+    </a> 
+     <a href="login.html"> <div>
+        <i class="fa-regular fa-user"></i>&nbsp;
+        Login
+      </div>
+    </a> -->
+    
+  </div><!-- profile end    -->
+   
+  </div> <!-- middle header end -->
+
+
+  <div id="navbarStart"><!-- navbar start  -->
+    <div>
+      <div id="home" class="active">HOME</div>
+      <div id="baby">BABY</div>
+      <div id="beauty">BEAUTY</div>
+      <div id="hair">HAIR</div>
+      <div id="face">FACE</div>
+      <div id="body">BODY</div>
+      <div id="giftPacks">GIFT PACKS</div>
+      <div id="allProducts">ALL PRODUCTS</div>
+      <div id="blog">BLOG</div>
+      <div id="plantGoodness">PLANT GOODNESS</div>
+      <div id="storeLocator">STORE LOCATOR</div>
+    </div>
+  </div> <!-- navbar end -->
+
+    <div class="wrapperAll">
+        <div id="heading">
+          <H1>Login in to get started</H1>
+        </div>
+        <div id="discription">
+            <div id="imageSection">
+                <img src="https://mamaearth.in/static/mamaearth/login.svg" alt="">
+            </div>
+            <div id="para">
+                Get access to your orders, trackprevious order & Redeem Mama Cash
+            </div>
+        </div>
+        <input type="text" id="searchBox" placeholder=" ENTER COUPON CODE HERE">
+                <button id="search">APPLY</button>
+
+    </div>
+</body>
+</html>
+<script>
+    var procedTopay=document.querySelector("#proceedPay");
+    procedTopay.addEventListener("click", paymentpage);
+    function paymentpage(){
+        window.location.href="paymentPage.html";
+    }
+</script> 
+<script src="header.js"></script>
