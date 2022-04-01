@@ -66,7 +66,14 @@ var procedTopay=document.querySelector("#proceedPay");
         var itemMgmtDiv=document.createElement("div");
         itemMgmtDiv.setAttribute("id","itemmgmtDiv");
         itemMgmtDiv.append(manageQty,delproduct);
-        var addedProducts=document.createElement("div");
+
+        var productInfo=document.createElement("div");
+        productInfo.setAttribute("id","productinfo");
+        productInfo.append(description,priceTag,itemMgmtDiv);
+
+        var cartItemList=document.createElement("div");
+        cartItemList.append(imgdiv,productInfo);
+        document.querySelector("#productsInCart").append(cartItemList);
     });
 
     function decreaseQty(qty){
