@@ -169,7 +169,7 @@ var bestSellers=[{
      priceTag.style.justifyContent="center";
      priceTag.style.alignItems="center";
      var currency=document.createElement("p");
-     currency.innerText="$";
+     currency.innerText="₹";
     var price = document.createElement("p");
     price.innerText = elem.price;
     priceTag.append(currency,price)
@@ -223,7 +223,7 @@ bestDeals.map(function (elem) {
      priceTag.style.justifyContent="center";
      priceTag.style.alignItems="center";
      var currency=document.createElement("p");
-     currency.innerText="$";
+     currency.innerText="₹";
     var price = document.createElement("p");
     price.innerText = elem.price;
 
@@ -322,7 +322,7 @@ colorRange.map(function (elem) {
    priceTag.style.justifyContent="center";
    priceTag.style.alignItems="center";
    var currency=document.createElement("p");
-   currency.innerText="$";
+   currency.innerText="₹";
   var price = document.createElement("p");
   price.innerText = elem.price;
   priceTag.append(currency,price)
@@ -397,7 +397,7 @@ name.setAttribute("class","name")
  priceTag.style.justifyContent="center";
  priceTag.style.alignItems="center";
  var currency=document.createElement("p");
- currency.innerText="$";
+ currency.innerText="₹";
 var price = document.createElement("p");
 price.innerText = elem.price;
 priceTag.append(currency,price)
@@ -547,7 +547,7 @@ name.setAttribute("class","name")
  priceTag.style.justifyContent="center";
  priceTag.style.alignItems="center";
  var currency=document.createElement("p");
- currency.innerText="$";
+ currency.innerText="₹";
 var price = document.createElement("p");
 price.innerText = elem.price;
 priceTag.append(currency,price)
