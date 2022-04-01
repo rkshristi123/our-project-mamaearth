@@ -60,9 +60,9 @@ font-family: 'Poppins', sans-serif;
 }
 #container>div>#rating{
     margin:auto;
-   margin-left: 140px;
+   margin:auto;
    height: 30px;
-   width: 60px;
+   width: 20%;
    background-color: #6da523;
    color: white;
    text-align: center;
