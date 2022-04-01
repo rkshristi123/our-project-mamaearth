@@ -56,7 +56,7 @@ function blogPage(){
 var plantGoodness=document.querySelector("#plantGoodness");
 plantGoodness.addEventListener("click", plantGoodnessPage)
 function plantGoodnessPage(){
-  window.location.href="plantGoodness.html";
+  window.location.href="plant.html";
  
 }
 var storeLocator=document.querySelector("#storeLocator");
