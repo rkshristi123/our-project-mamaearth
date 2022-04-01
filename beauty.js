@@ -279,6 +279,7 @@ name.setAttribute("class","name")
      currency.style.fontSize="20px";
 var price = document.createElement("p");
 price.innerText = elem.price;
+price.style.fontSize= "20px"
 price.setAttribute("class","pr")
 priceTag.append(currency,price);
 var btn2 = document.createElement("button");
