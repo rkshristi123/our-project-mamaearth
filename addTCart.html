@@ -26,6 +26,15 @@
     width: 100%;
     background-color: #d4424c;
 }
+
+#productsInCart{
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: auto;
+    background-color: white;
+}
 #coupanCode{
     width: 100%;
     /* border: 1px solid ;
@@ -161,6 +170,9 @@
         <div id="cartHerder">
 
         </div>
+        <div id="productsInCart">
+
+        </div>
         <div id="coupanSection">
             <p>Have you coupan code?</p>
             <div id="coupanCode">
@@ -206,10 +218,6 @@
     </div>
 </body>
 </html>
-<script>
-    var procedTopay=document.querySelector("#proceedPay");
-    procedTopay.addEventListener("click", paymentpage);
-    function paymentpage(){
-        window.location.href="paymentPage.html";
-    }
+<script src="cart.js">
+    
 </script> 
