@@ -275,14 +275,6 @@ h2{
 #pic>img{
     width: 100%;
 }
-<<<<<<< HEAD
-#profileSection>a>div>p{
-    font-size: 10px;
-    border-radius: 2px;
-    background-color: green ;
-    color: white;
-}
-=======
 
   /* footer start */
   .footer-box-low{
@@ -391,5 +383,4 @@ h2{
     height:40px;
     width:40px;
 }
-  /* footer end */
->>>>>>> 895b17a752489ce27828757de858ce45c1347696
+  /* footer end ....
