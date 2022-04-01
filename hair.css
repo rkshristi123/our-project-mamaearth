@@ -30,7 +30,9 @@ img{
 .btn{
     display: block;
     text-align: center;
-    width:320px;
+    width:90%;
+    font-size: 20px;
+    margin-left: 5%;
     height: 40px;
     background-color: white;
     border:0.5px solid rgb(201, 195, 195);
@@ -55,11 +57,11 @@ p{
 
 font-family: 'Poppins', sans-serif;    
 }
-#container>div>div{
+#container>div>#rating{
     margin:auto;
-   margin-left: 140px;
+   margin:auto;
    height: 30px;
-   width: 60px;
+   width: 20%;
    background-color: #6da523;
    color: white;
    text-align: center;
@@ -69,7 +71,9 @@ font-family: 'Poppins', sans-serif;
 h3{
     text-align: center;
      color:rgb(37, 34, 34);
-   
+     font-size: 18px;
+     margin-top: 15px;
+     margin-bottom: 15px;
    
 
 }

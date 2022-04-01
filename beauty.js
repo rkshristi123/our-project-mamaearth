@@ -249,7 +249,9 @@ var beautyData=[
 ]
 
 
-
+var count=localStorage.getItem("mamaEarthCartCount")||0;
+ var displayCount= document.querySelector("#count");
+ displayCount.innerText=count;
 
 var addToCart=JSON.parse(localStorage.getItem("Cart"))||[];
 
@@ -287,6 +289,9 @@ btn2.innerText = "ADD TO CART";
 btn2.setAttribute("class","add")
 btn2.addEventListener("click",function(){
    addtocart(elem);
+   count++;
+   localStorage.setItem("mamaEarthCartCount",count);
+   displayCount.innerText=count;
 })
 
 box.append(img, name,btn1, priceTag, btn2);
