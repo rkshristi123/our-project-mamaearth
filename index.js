@@ -472,7 +472,7 @@ name.setAttribute("class","name")
  priceTag.style.justifyContent="center";
  priceTag.style.alignItems="center";
  var currency=document.createElement("p");
- currency.innerText="$";
+ currency.innerText="₹";
 var price = document.createElement("p");
 price.innerText = elem.price;
 priceTag.append(currency,price)
