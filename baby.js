@@ -275,6 +275,7 @@ babyData.map(function (elem) {
      currency.innerText="₹";
     var price = document.createElement("p");
     price.innerText = elem.price;
+    
     priceTag.append(currency,price)
     // 
     priceTag.setAttribute("class","pr")
