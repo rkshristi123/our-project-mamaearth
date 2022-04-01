@@ -89,7 +89,7 @@ margin-top: 60px;
 }
 #our>p{
     width:80%;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 300;
     color: rgb(78, 72, 72);
 }
@@ -104,7 +104,7 @@ margin-top: 60px;
 }
 #our>div{
     border:0px;
-    height:180px;
+    height:130px;
     width:20%;
     text-align: center;
     background-color:#82C341;
@@ -113,14 +113,14 @@ margin-top: 60px;
     
 }
 #our>div>h2{
-    font-size: 70px;
+    font-size: 40px;
     font-weight: 300;
     color:white;
     margin-top:20px ;
 }
 #our>div>p{
-    font-size: 30px;
-    margin-top:-50px;
+    font-size: 25px;
+    
     color:white
 }
 #box4{
@@ -134,7 +134,7 @@ margin:auto;
     display:flex
 }
 #a>div>p{
-    font-size:30px ;
+    font-size:25px ;
     color: rgb(78, 72, 72);
 }
 #b{
@@ -156,7 +156,7 @@ margin:auto;
 
 }
 #c>div>p{
-    font-size:30px ;
+    font-size:25px ;
     color: rgb(78, 72, 72);
     width:115%
 }

@@ -160,7 +160,8 @@ facedata=[
    rating:"4.9★",
    price:"1399"
   },
-  {image:"https://honasa-mamaearth-production.imgix.net/s/k/skin-correct-face-serum-with-ingredient_1.jpg?auto=format&fit=crop&w=683&auto=compress",
+  {
+    image:"https://honasa-mamaearth-production.imgix.net/s/k/skin-correct-face-serum-with-ingredient_1.jpg?auto=format&fit=crop&w=683&auto=compress",
    name:"Skin Correct Face Serum with Niacinamide and Ginger Extract and aloevera   - 30 ml",
    rating:"4.9★",
    price:"899"
@@ -182,7 +183,7 @@ facedata.map(function(elem){
   h3.innerText=elem.name;
   var rating=document.createElement("div")
   rating.innerText=elem.rating;
-  
+
   rating.setAttribute("id","rating");
   var priceTag=document.createElement("div");
      priceTag.style.display="flex";

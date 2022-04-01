@@ -10,112 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="header.css">
-
+    <link rel="stylesheet" href="cart.css">
     <style>
-        body{
-    background-color: #1c2938;
-}
-.wrapperAll{
-    background-color: #f2f9e8;
-    width: 40%;
-    margin: auto;
-}
-
-#cartHerder{
-    height: 50px;
-    width: 100%;
-    background-color: #d4424c;
-}
-
-#productsInCart{
-    width: 95%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: auto;
-    background-color: white;
-}
-#coupanCode{
-    width: 100%;
-    /* border: 1px solid ;
-    border-color: lightgrey; */
-    border-radius: 5px;
-}
-#coupanCode>#coupanInput{
-    width: 79%;
-    height:35px;
-    border: none;
-    border: 1px solid;
-    border-color: lightgray;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    font-size: 18px;
-}
-
-#apply{
-    height: 40px;
-    width: 19%;
-    margin-left:-5px;
-    border: 2px solid #00afef;
-    background-color: #d6f4ff;
-    color: #00afef;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    font-size: 18px;
-}
-#coupanSection{
-    padding: 20px;
-    margin-top: 20px;
-    background-color: white;
-    font-family: 'Lato', sans-serif; 
-}
-
-#priceSection{
-    padding: 20px;
-    margin-top: 20px;
-    background-color: white;
-    font-family: 'Lato', sans-serif; 
-    display: flex;
-    flex-direction: column;
-}
-#priceSection>div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-#priceSection>#headingPrice{
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-    border-bottom: 1px solid lightgray;
-}
-#priceSection>#headingPrice>#totalPrice{
-    display: flex;
-    align-items: center;
-}
-#priceSection>.des{
-    font-size: 16px;
-    /* padding-top: 5px;
-    padding-bottom: 5px; */
-    /* height: 40px; */
-    border-bottom: 1px solid rgb(245, 242, 242);
-}
-#priceSection>.des>.price{
-    display: flex;
-    align-items: center;
-}
-#priceSection>#proceedPay{
-    background-color: #00afef;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: white;
-    margin-top: 10px;
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Roboto', sans-serif;
-    cursor: pointer;
-}
+       
     </style>
 </head>
 <body>
@@ -183,7 +80,7 @@
         <div id="priceSection">
             <div id="headingPrice">
                 <div id="summary">Price Summary</div>
-                <div id="totalPrice">(<p>249</p>)</div>
+                <div id="totalPrice">(<p id="allItemprice"></p>)</div>
             </div>
             <div class="des">
                 <div>Order Total</div>
