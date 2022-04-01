@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://kit.fontawesome.com/24c494a6b6.js"crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a9dbdcc6e4.js" crossorigin="anonymous"></script>
+    <!-- <script
+    src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans&family=Poppins:wght@500;700;900&family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+<!-- s;ide show bootstrap link -->
+<link rel= "stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="header.css">
+
+</head>
+
+<style>
+h2{
+text-align: center;
+color: black;
+ font-family: Sans-serif;
+}
+
+#container {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: auto;
+gap: 2ch;
+margin-left: 6%;
+margin-right: 5%;
+
+
+
+ }
+ #container>div {
+     height: 550px;
+     width: 95%;
+    border: 0.5px solid lightgray;
+    padding-bottom: 18%;
+   
+}
+ .img1{
+     height: 350px;
+     width: 95%;
+     padding-left: 2ch;
+     margin-top: 1ch;
+}
+ .about{
+     padding: 1ch 1ch 1ch 1ch;
+     text-align: center;
+     font-size: 19px;
+     font-family:Lato;
+     
+}
+.button{
+  text-align: center;
+  font-size: 3.3ch;
+  font-weight: bold;
+  color: #00afef;
+  width: 94%;
+  height: 50px;
+  font-family: Monospace;
+  margin-left: 3%;
+  border: 0.1px solid lightgrey;
+}
+.button:hover{
+  background-color: #00afef;
+  color: white;
+}
+.price{
+  font-size: large;
+  text-align: center;
+}
+.rating{
+  height: 33px;
+  width: 17%;
+  border-radius: 0.5ch;
+  font-size: 2.5ch;
+  font-weight: bolder;
+  text-align: center;
+  background-color: #6da523;
+  color: beige;
+  margin: auto;
+  font-size: 2.7ch;
+
+}
+.box1{
+  
+  display: flex;
+  justify-content: center;
+}
+h4{
+  text-decoration-line: line-through;
+  color: grey;
+  /* font-size: medium; */
+  margin-left: 1ch;
+  margin-right: 1ch;
+  font-size: medium;
+ 
+}
+p{
+  font-size: larger;
+}
+.box2{
+  height: 200px;
+  width: 88%;
+  margin: auto;
+  margin-top: 2%;
+  display: flex;
+  /* border:  0.1px solid black; */
+}
+.box2>div{
+height: 230px;
+width:80%;
+border:  0.1px solid lightgray;
+}
+h5{
+  color: grey;
+  font-size: large;
+  text-align: center;
+  line-height: 8px;
+  font-family: Sans-serif;
+}
+img{
+  height: 8ch;
+  width: 17%;
+  padding-left: 20ch;
+}
+.btn{
+color: #00afef;
+border: 1px solid #00afef;
+height: 5ch;
+width: 35%;
+border-radius: 0.5ch;
+font-size: larger;
+text-shadow: 4ch;
+}
+.btn:hover{
+  background-color: #00afef;
+  color: white;
+}
+.box3{
+  height: 250px;
+  width: 88%;
+  margin: auto;
+  margin-top: 1.5%;
+  display: flex;
+  border: 0.1px solid lightgray;
+  
+  display: flex; 
+}
+.box3>div{
+  height: 250px;
+  width: 50%;
+  /* border: 0.1px solid lightgray; */
+}
+.boxes{
+  height: 200px;
+  width: 50%;
+  display: flex;
+  /* border: 1px solid blue; */
+}
+.boxes>div{
+  height: 250px;
+  width: 100%;
+  /* border: 0.1px solid lightgrey; */
+}
+.lastbox{
+  height: 700px;
+  width: 88%;
+  margin: auto;
+  display: flex;
+  border: 0.1px solid lightgray;
+}
+.lastbox>div{
+  height: 700px;
+  width: 35%;
+  /* border: 0.1px solid lightgrey; */
+}
+.lastbox>div{
+  color: grey;
+  font-size: 18px;
+  text-align: center;
+  line-height: 3.8ch;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+h3:hover, h3:active {
+  color: #00afef;
+  cursor: pointer;
+}
+.endbox{
+  height: 200px;
+  width: 88%;
+  margin: auto;
+  border: 0.1px solid lightgrey
+}
+.socialmedia{
+  height: 55px;
+  width: 23%;
+  margin: auto;
+  display: flex;
+  /* border: 1px solid black */
+}
+.socialmedia>div{
+  height: 55px;
+  width: 23%;
+ 
+}
+.fa {
+  padding: 5px 25px 22px 15px;
+  font-size: 40px;
+  width: 13px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-facebook {
+  height: 90px;
+  color: grey;
+}
+.EOD{
+  height: 100px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  /* border: 0.1px solid lightgrey */
+}
+</style>
+<body>
+
+<!-- Chandani's code -->
+<div id="red">
+  <a href="#">Asia's 1st brand with MADE SAFE Certified Products</a>
+  <a href="#">Free Shipping Above 399 | COD Available | Extra 5% OFF on Prepaid Orders | Shpo Now</a>
+  <a href="#"><i class="fa-regular fa-user"></i></a>
+</div>
+<div id="midheader"><!-- middle header start  -->
+    <div id="imSearch">
+        <img src="https://mamaearthp.imgix.net/wysiwyg/mamaearth-logo.png?auto=format&fit=scale">
+        <div id="searchSection">
+            <input type="text" id="searchBox" placeholder=" Search for products...">
+            <button id="search"><i class="fa-solid fa-magnifying-glass"></i>&nbsp;&nbsp;Search</button>
+        </div>
+    </div> 
+<!-- profile start  -->
+<div id="profileSection">
+ <div class="cartLogin"><a href="addTCart.html"><div><i class="fa-solid fa-cart-shopping"></i><p id="count"></p>&nbsp;
+    Cart
+  </div></div>
+</a>
+ <a href="login.html"> <div>
+    <i class="fa-regular fa-user"></i>&nbsp;
+    Login
+  </div>
+</a>
+
+</div><!-- profile end    -->
+
+</div> <!-- middle header end -->
+
+
+<div id="navbarStart"><!-- navbar start  -->
+<div id="menu">
+  <div id="home" >HOME</div>
+  <div id="baby">BABY</div>
+  <div id="beauty">BEAUTY</div>
+  <div id="hair">HAIR</div>
+  <div id="face">FACE</div>
+  <div id="body">BODY</div>
+  <div id="giftPacks" class="active">GIFT PACKS</div>
+  <div id="allProducts">ALL PRODUCTS</div>
+  <div id="blog">BLOG</div>
+  <div id="plantGoodness">PLANT GOODNESS</div>
+  <div id="storeLocator">STORE LOCATOR</div>
+</div>
+</div> <!-- navbar end -->
+<!-- slideshow start----------- -->
+<div class="container-fluid slido">
+<div id="left">
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><b>Top</b></button>
+<!-- <div style="height: 20%; width: 100%;" > -->
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+   <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+    <li data-target="#demo" data-slide-to="3"></li>
+    <li data-target="#demo" data-slide-to="4"></li>
+  </ul>
+  
+  <!-- The images for slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://images.ctfassets.net/66mrrren2unf/jvnVpA7ItjHuqkoeGFOi9/c24266e7809b06ca3f0796b95d07be65/Desktop.jpg?q=40" alt="Los Angeles"  >
+       
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.ctfassets.net/66mrrren2unf/6nc4ahNcZm8FqgU4vU3vKl/cdfcd3ba0f2db050759fc68ee82a4313/Desktop_Bye-Bye-Face-Creams-with-CTA.jpg?q=40" alt="Chicago" >
+       
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.ctfassets.net/66mrrren2unf/3PnUXonZQ0tDY8e7siuCA7/48451c727f3e60ee71b3a628eda928cd/Desktop_Without_CTA.jpg?q=40" alt="New York"  >
+       
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.ctfassets.net/66mrrren2unf/7HvyA24fZoupMV6HeOZmBV/b8b1fe1de6b1f9a5f08273f0bf0d850a/Banner_Website.jpg?q=40" alt="New York"  >
+       
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.ctfassets.net/66mrrren2unf/4oisoSM68ZGW8BfKJseTZk/1c48823796f8408535a2417bdc5c3794/Desktop_coclocare_lipserum.jpg?q=40" alt="New York" >
+    </div>
+  </div>
+<!-- end of Chandani's -->
+<p style = "color: #3fcef8; font-family:Sans-serif;padding-left: 10ch;">Home<span style="color: black;font-family:Sans-serif;"> > Kits</span></p>
+<h2>KITS</h2>
+<h3 style="margin-left: 11ch;font-size: larger;">Our Product<span style="margin-left: 80%; font-size:larger; color: #3fcef8;font-family:Sans-serif;font-size: larger;"> Sort By &#8693; </span></h3>
+
+<div id="container"></div>
+<div class="box2">
+  <div style="width: 30%; height: 230px;"> 
+  <img style="padding-top: 6ch;" src="https://mamaearthp.imgix.net/wysiwyg/mobile-truck.png?auto=format">
+  <h5 style="color: #415772;">Free Shipping<h5>
+  <h5>Order Above Rs.399<h5>
+  </div>
+  <div style="width: 30%; height: 230px;"> 
+  <img style="padding-top: 6ch;" src="https://mamaearthp.imgix.net/wysiwyg/mobile-wallet.png?auto=format">
+  <h5 style="color: #415772;">COD Available<h5>
+  <h5>@ Rs.40 Per Order<h5>
+  </div>
+  <div>
+  <p style="text-align: center;color: #415772;font-family: Sans-serif;font-size: 4ch;">Have Quries or Concerns?</p>
+  <p style="padding-left: 38%;"><button class="btn">CONTACT US</button></p>
+  </div>
+  </div>
+  <div class="box3">
+    <div>
+    <p style="font-family:Sans-serif;padding-left: 8ch;font-size: 3ch;">PAYMENT</p>
+  <h3 style="color: #6da523;padding-left:2.5cm;font-size: 3ch;">Payment Protection,Easy Return Policy</h3></div>
+    
+    <div class="boxes">
+      <div><img style="height: 110px; width: 42%;padding:30px 55px 45px 80px" src="https://mamaearthp.imgix.net/wysiwyg/dermatology-tested-100x1002x.png?auto=format">
+     <p style="text-align: center;font-size: larger;padding-bottom: 4ch;">Dermatologically Tested</p></div>
+      <div><img  style="height: 110px; width: 42%;padding:30px 55px 45px 80px" src="https://mamaearthp.imgix.net/wysiwyg/fda-100x1002x.png?auto=format">
+     <p style="text-align: center;font-size: larger;padding-bottom: 15%;">FDA Approved</div></p>
+      <div><img style="height: 110px; width: 42%;padding:30px 55px 45px 80px"src="https://mamaearthp.imgix.net/wysiwyg/MadeSafeImages13Jan/madesafe13janlogo.png?auto=format">
+     <p style="text-align: center;font-size: larger;;">Made Safe Certified</p></div>
+    </div>
+  </div>
+    <div class="lastbox">
+      <div>
+        <h2 style="color: grey;">USEFULL LINK</h2>
+        <h3>Privacy Policy</h3>
+        <h3>Return</h3>
+        <h3>Terms & Condition</h3>
+        <h3>Term & consition- Cashback</h3>
+        <h3>FAQs</h3>
+        <h3>We're Safe</h3>
+        <h3>Track Order</h3>
+        <h3>Contact Us</h3>
+        <h3>Sitemap</h3>
+        <h3>About Us</h3>
+       </div>
+      <div>
+        <h2 style="color: grey;">CATEGORIES</h2>
+        <h3>Beby</h3>
+        <h3>Beauty</h3>
+        <h3>Hair</h3>
+        <h3>Face</h3>
+        <h3>FAQs</h3>
+        <h3><Body></Body></h3>
+        <h3>giftpacks</h3>
+      </div>
+      <div>
+        <h2 style="color: grey;">MY ACCOUNT</h2>
+        <h3>Account</h3>
+        <h3>Order</h3>
+        <h3>Address</h3>
+      </div>
+      <div>
+        <img style="height: 450px;width: 40%;padding-right: 100ch;padding-top: 12%;" src="https://mamaearthp.imgix.net/wysiwyg/Best-Brand500x5002x.png?auto=format" alt="">
+      </div>
+    </div>
+    <div class="endbox">
+      <div><h2>SHOW US SOME<span style="color: red;justify-content: space-evenly;padding-inline: 10px;"><i class="fa-solid fa-heart"></i></span>ON SOCIAL MEDIA</h2></div>
+      <div class="socialmedia">
+        <div><a  href="#" class="fa fa-facebook"></a></div>
+        <div><a style="color: grey;" href="#" class="fa fa-twitter"></a></div>
+        <div><a  style="color: grey;" style="color: grey;" href="#" class="fa fa-instagram"></a></div>
+        <div><a   style="color: grey;" href="#" class="fa fa-youtube"></a></div>
+        <div><a  style="color: grey;" href="#" class="fa fa-pinterest"></a></div>
+        <div><a  style="color: grey;" href="#" class="fa fa-google"></a></div>
+       </div>
+       <div class="EOD">
+<div><p style="color: grey; margin-bottom: 5ch;">© 2022 Honasa Consumer Pvt. Ltd. All Rights Reserved</p></div>
+       </div>
+      
+
+     
+      
+      
+  
+      
+      
+      
+      
+      
+       
+  
+    
+    
+  
+
+
+
+ 
+    
+  
+
+    
+    
+  
+
+
+<script>
+    var giftpacks = [
+    {
+        image:
+        "https://honasa-mamaearth-production.imgix.net/a/g/agent-apple-body-wash.jpg?auto=compress&fit=scale&w=400&h=400",
+        about: "Agent Apple Body Wash for Kids with Apple & Oat Protine -300ml (Pack of 2)",
+        price:"299",
+        discount:"₹598 |",
+        off:"(50% off)"
+        },
+        {
+        image:
+        "https://honasa-mamaearth-production.imgix.net/m/a/mango-body-wash.jpg?auto=compress&fit=scale&w=400&h=400",
+        about: "Major Mango  Body Wash for Kids with Mango & Oat Protine -300ml (Pack of 2)",
+        price:"299",
+        discount:"₹598 |",
+        off:"(50% off)"
+        },
+        {
+         image:
+        "https://honasa-mamaearth-production.imgix.net/s/u/super-strawberry-body-lotion.jpg?auto=compress&fit=scale&w=400&h=400",
+        about: "Super Strawbery Body Lotion for Kids With Strawbary & Shea Butter -400ml (Pack of 2)",
+        price:"₹399",
+        discount:"₹598 |",
+        off:"(50% off)"
+        },
+        {
+       image:
+        "https://honasa-mamaearth-production.imgix.net/o/r/original-orange-body-lotion.jpg?auto=compress&fit=scale&w=400&h=400",
+        about: "Original Orange Body Lotion For Kids With Orange & Shea Butter -400ml (Pack of 2)",
+        price:"₹399 ",
+        discount:"₹598 |",
+        off:"(50% off)"
+        },
+        {
+       image:
+        "https://honasa-mamaearth-production.imgix.net/m/a/major-mango-body-lotion-for-kids.jpg?auto=compress&fit=scale&w=400&h=400",
+        about: "Major Mango Body Lotion For Kids With Butter & Milk Protine -400ml (Pack of 2)",
+        price:"₹399 ",
+        discount:"₹598 |",
+        off:"(50% off)"
+        },
+        {
+       image:
+        "https://honasa-mamaearth-production.imgix.net/a/g/agent-apple-body-lotion.jpg?auto=compress&fit=scale&w=400&h=400",
+        about: "Agent Apple Body Lotion For kids With Apple & Oat Milk  -400ml (Pack of 2)",
+        price:"₹399 ",
+        discount:"₹598 |",
+        off:"(50% off)"
+        },
+        {
+       image:
+        "https://honasa-mamaearth-production.imgix.net/p/e/perfume-1_3.jpg?auto=compress&fit=scale&w=400&h=400",
+        about: "Mameearth ME Eau De Perfume For a Fragnance As Unioque As You 8ml Kit",
+        price:"₹399",
+        discount:"₹598 |",
+        off:"(50% off)"
+        },
+        {
+       image:
+        "https://honasa-mamaearth-production.imgix.net/v/i/vitamin_c_and_ubtan.jpg?auto=compress&fit=scale&w=400&h=400",
+        about: "Skin Redians Body Care Kit-Unatn Body Lotion & Viatamin  -400ml (Pack of 2)",
+        price:"₹518",
+        discount:"₹598 |",
+        off:"(50% off)"
+        },
+        {
+       image:
+        "https://honasa-mamaearth-production.imgix.net/v/i/vitamin_c_and_rose.jpg?auto=compress&fit=scale&w=400&h=400",
+        about: "Skin Refreshing & Smooth Body Care Kit-Rose Body Lotion -400ml (Pack of 2)",
+        price:"₹518 ",
+        discount:"₹598 |",
+        off:"(50% off)"
+        },
+        {
+       image:
+        "https://honasa-mamaearth-production.imgix.net/u/b/ubtan_and_rose.jpg?auto=compress&fit=scale&w=400&h=400",
+        about: "Skin Nourishing Body Care Cambo - Ubten Body lotion -400ml (Pack of 2)",
+        price:"₹518 ",
+        discount:"₹598 |",
+        off:"(50% off)"
+        },
+        {
+       image:
+        "https://honasa-mamaearth-production.imgix.net/v/i/vitamin_c_body_lotion.jpg?auto=compress&fit=scale&w=400&h=400",
+        about: "ubtan Body Lotion with Turmeric & Kokum Butter -400ml (Pack of 2)",
+        price:"₹518 ",
+        discount:"₹598 |",
+        off:"(50% off)"
+        },
+        {
+       image:
+        "https://honasa-mamaearth-production.imgix.net/u/b/ubtan_body_lotion_7.jpg?auto=compress&fit=scale&w=400&h=400",
+        about: "Rose Body Lotion with Rose Water Milk for Deep Hydration -400ml (Pack of 2)",
+        price:"₹518 ",
+        discount:"₹598 |",
+        off:"(50% off)"
+        },
+        {
+       image:
+        "https://honasa-mamaearth-production.imgix.net/u/b/ubtan_body_lotion_7.jpg?auto=compress&fit=scale&w=400&h=400",
+        about: "Agent Apple Body Wash for Kids with Apple & Oat Protine -300ml (Pack of 2) ",
+        price:"₹518 ",
+        discount:"₹598 |",
+        off:"(50% off)"
+        },
+        {
+       image:
+        "https://honasa-mamaearth-production.imgix.net/r/o/rose_body_lotion_7.jpg?auto=compress&fit=scale&w=400&h=400",
+        about: "Agent Apple Body Wash for Kids with Apple & Oat Protine -300ml (Pack of 2) ",
+        price:"₹1123 ",
+        discount:"₹598 |",
+        off:"(50% off)"
+        },
+        {
+       image:
+        "https://honasa-mamaearth-production.imgix.net/c/o/combo_4.jpg?auto=compress&fit=scale&w=400&h=400",
+        about: "Agent Apple Body Wash for Kids with Apple & Oat Protine -300ml (Pack of 2)",
+        price:"₹768 ",
+        discount:"₹598 |",
+        off:"(50% off)"
+        },
+        {
+       image:
+        "https://honasa-mamaearth-production.imgix.net/a/n/anti_hair_fall_spa_kit_1.jpg?auto=compress&fit=scale&w=400&h=400",
+        about: "Agent Apple Body Wash for Kids with Apple & Oat Protine -300ml (Pack of 2)",
+        price:"₹1187 ",
+        discount:"₹598 |",
+        off:"(50% off)"
+        },
+        {
+       image:
+        "https://honasa-mamaearth-production.imgix.net/a/n/anti-fall_regimen_kit_uges0reark90qp1c.jpg?auto=compress&fit=scale&w=400&h=400",
+        about: "Agent Apple Body Wash for Kids with Apple & Oat Protine -300ml (Pack of 2)",
+        price:"₹803 ",
+        discount:"₹598 |",
+        off:"(50% off)"
+        },
+        {
+       image:
+        "https://honasa-mamaearth-production.imgix.net/1/2/1200x1200_poqqaktkr8d9andg.jpg?auto=compress&fit=scale&w=400&h=400",
+        about: "Agent Apple Body Wash for Kids with Apple & Oat Protine -300ml (Pack of 2) ",
+        price:"₹999",
+        discount:"₹598 |",
+        off:"(50% off)"
+        },
+        {
+       image:
+        "https://honasa-mamaearth-production.imgix.net/u/b/ubtan_body_lotion_7.jpg?auto=compress&fit=scale&w=400&h=400",
+        about: "ubtan Body Lotion with Turmeric & Kokum Butter  -400ml (Pack of 2)",
+        price:"₹997",
+        discount:"₹598 |",
+        off:"(50% off)"
+        },
+        {
+       image:
+        "https://honasa-mamaearth-production.imgix.net/h/a/hair_fall_control_kit_1.jpg?auto=compress&fit=scale&w=400&h=400",
+        about: "Agent Apple Body Wash for Kids with Apple & Oat Protine -300ml (Pack of 2)",
+        price:"₹999",
+        discount:"₹598 |",
+        off:"(50% off)"
+        },
+        {
+       image:
+        "https://honasa-mamaearth-production.imgix.net/c/o/combo_4.jpg?auto=compress&fit=scale&w=400&h=400",
+        about: "Agent Apple Body Wash for Kids with Apple & Oat Protine -300ml (Pack of 2)",
+        price:"₹908",
+        discount:"₹598 |",
+        off:"(50% off)"
+
+        },
+        {
+       image:
+        "https://honasa-mamaearth-production.imgix.net/w/i/winter-essential-kit_84fel26stplkpxsv.jpg?auto=compress&fit=scale&w=400&h=400",
+        about: "Agent Apple Body Wash for Kids with Apple & Oat Protine -300ml (Pack of 2)",
+        price:"₹999",
+        discount:"₹598 |",
+        off:"(50% off)"
+        },
+        {
+       image:
+        "https://honasa-mamaearth-production.imgix.net/d/a/damage-repair-kit.jpg?auto=compress&fit=scale&w=400&h=400",
+        about: "Agent Apple Body Wash for Kids with Apple & Oat Protine -300ml (Pack of 2)",
+        price:"₹768",
+        discount:"₹598 |",
+        off:"(50% off)"
+        },
+        {
+       image:
+        "https://honasa-mamaearth-production.imgix.net/w/e/wedding-kit-_1200x1200_1_gihldmqzgk4fkgsh.jpg?auto=compress&fit=scale&w=400&h=400",
+        about: "Agent Apple Body Wash for Kids with Apple & Oat Protine -300ml (Pack of 2)",
+        price:"₹942",
+        discount:"₹598 |",
+        off:"(50% off)"
+        },
+        {
+       image:
+        "https://honasa-mamaearth-production.imgix.net/b/h/bhringamla-combo_msqe7ulfgyv85fsi.jpg?auto=compress&fit=scale&w=400&h=400",
+        about: "Agent Apple Body Wash for Kids with Apple & Oat Protine -300ml (Pack of 2)",
+        price:"₹838",
+        discount:"₹598 |",
+        off:"(50% off)"
+        },
+        {
+       image:
+        "https://honasa-mamaearth-production.imgix.net/v/i/vitamin-c-skincare-regimen-kit_mzka1kswpz0gem40.jpg?auto=compress&fit=scale&w=400&h=400",
+        about: "Agent Apple Body Wash for Kids with Apple & Oat Protine -300ml (Pack of 2)",
+        price:"₹949",
+        discount:"₹598 |",
+        off:"(50% off)"
+        },
+        {
+       image:
+        "https://honasa-mamaearth-production.imgix.net/t/a/tan-removal-regimen_10_whntawimnjpocnz9.jpg?auto=compress&fit=scale&w=400&h=400",
+        about: "Agent Apple Body Wash for Kids with Apple & Oat Protine -300ml (Pack of 2)",
+        price:"₹768",
+        discount:"₹598 |",
+        off:"(50% off)"
+        },
+        {
+       image:
+        "https://honasa-mamaearth-production.imgix.net/b/a/baby-wipes-_72-3_.jpg?auto=compress&fit=scale&w=400&h=400",
+        about: "Agent Apple Body Wash for Kids with Apple & Oat Protine -300ml (Pack of 2)",
+        price:"₹649",
+        },
+        
+        
+        
+        
+        
+        
+    
+    
+
+];
+
+giftpacks.map(function (elem)
+{
+    var box = document.createElement("div");
+    var box1 = document.createElement("div");
+    box1.setAttribute("class","box1")
+    
+   
+
+    var about = document.createElement("p");
+    about.textContent = elem.about;
+    about.setAttribute("class","about")
+
+    var img1 = document.createElement("img")
+    img1.src = elem.image;
+    img1.setAttribute("class","img1")
+
+    var rating = document.createElement("p")
+    rating.innerText="5.0 ★";
+    rating.setAttribute("class","rating")
+   
+    var price = document.createElement("h3");
+    price.textContent=elem.price 
+    var discount = document.createElement("h4");
+    discount.textContent=elem.discount 
+    // discount.setAttribute("class","discount")
+    var off = document.createElement("p");
+    off.textContent=elem.off 
+    off.style.color="red"
+
+    var button = document.createElement("button");
+    button.innerText="ADD TO CART";
+    button.setAttribute("class","button")
+
+    box1.append(price,discount,off)   
+    box.append(img1,about,rating,box1,button);
+
+    document.querySelector("#container").append(box);
+
+  
+
+  });
+
+  
+ 
+    
+    
+
+   
+
+    
+
+</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script
+src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"
+integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk="
+crossorigin="anonymous"></script>
+
+<!-- header script -->
+<script src="header.js"></script>  
+   
+
+    
+    
+
+   
+
+    
+
+    
+
+ 
