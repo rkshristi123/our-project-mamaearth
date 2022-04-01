@@ -82,24 +82,27 @@ background-color:white ;
 
 .prod{
   display: flex;
-  width:900px;
+  width:700px;
   margin-left:120px;
-  justify-content: space-around;
+  justify-content: space-evenly;
   
   }
   .prod>.p1{
   border-radius:20px;
   border:0.5px solid rgb(201, 195, 195);
   height: 40px;
-  width:250px;
+ width:10%;
   color:rgb(90, 85, 85);
   margin-bottom:20px;
   background-color: white;
-  margin-left: 20px;
+
   font-size: 17px;
   font-weight: bold;
-  padding:80px,20px, 80px, 20px;
+  
   text-align: center;
   
   
+  }
+  .t{
+    margin-left: 20px;
   }
