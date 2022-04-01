@@ -38,7 +38,7 @@ function bodyPage(){
 var giftPacks=document.querySelector("#giftPacks");
 giftPacks.addEventListener("click", giftPacksPage)
 function giftPacksPage(){
-  window.location.href="giftPacks.html";
+  window.location.href="giftPack.html";
  
 }
 var allProducts=document.querySelector("#allProducts");
@@ -56,7 +56,7 @@ function blogPage(){
 var plantGoodness=document.querySelector("#plantGoodness");
 plantGoodness.addEventListener("click", plantGoodnessPage)
 function plantGoodnessPage(){
-  window.location.href="plantGoodness.html";
+  window.location.href="plant.html";
  
 }
 var storeLocator=document.querySelector("#storeLocator");
