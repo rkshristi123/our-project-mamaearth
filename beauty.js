@@ -275,7 +275,7 @@ name.setAttribute("class","name")
      priceTag.style.fontSize="20px";
      var currency=document.createElement("p");
      currency.setAttribute("id","para");
-     currency.innerText="$";
+     currency.innerText="₹";
      currency.style.fontSize="20px";
 var price = document.createElement("p");
 price.innerText = elem.price;
