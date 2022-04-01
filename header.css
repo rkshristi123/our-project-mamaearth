@@ -73,8 +73,7 @@
     font-size: 18px;
 }
 #profileSection{
-    width: 12%;
-   
+    width: 13%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,10 +82,40 @@
 a:hover{
     text-decoration: none;
 }
+#profileSection>.cartLogin{
+    width: 50%;
+    display: flex;
+}
+#profileSection>.cartLogin>a>div{
+   display: flex;
+    
+    font-size: 18px;
+    color: gray;
+    text-decoration: none;
+} 
+#profileSection>.cartLogin>a>div>p{
+    font-size: 9px;
+    width: 14px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: green ;
+    color: white;
+}
+#profileSection>.cartLogin>a>div>i{
+    font-size: 24px;
+    color: #00afef;
+}
+/* Login Section css */
 #profileSection>a>div{
     font-size: 18px;
     color: gray;
     text-decoration: none;
+} 
+#profileSection>a>div>p{
+    font-size: 8px;
+    border-radius: 2px;
+    background-color: green ;
+    color: white;
 }
 #profileSection>a>div>i{
     font-size: 24px;

@@ -142,7 +142,9 @@ var bestSellers=[{
                 },
            ];
 
-
+  var count=localStorage.getItem("mamaEarthCartCount")||0;
+ var displayCount= document.querySelector("#count");
+ displayCount.innerText=count;
   var addToCart=JSON.parse(localStorage.getItem("Cart"))||[];
 // for best seller***************
     bestSellers.map(function (elem) {
@@ -179,7 +181,12 @@ var bestSellers=[{
     btn2.setAttribute("class","add")
     btn2.addEventListener("click", function(){
       console.log("in function");
-     addtocart(elem);
+      addtocart(elem);
+      count++;
+      localStorage.setItem("mamaEarthCartCount",count);
+      displayCount.innerText=count;
+    
+     window.alert("you have a product");
     })
 
     box.append(img, name,btn1, priceTag, btn2);
@@ -248,6 +255,10 @@ bestDeals.map(function (elem) {
     btnBestDealer.addEventListener("click", function(){
       console.log("in function");
      addtocartBestDealer(elem);
+     count++;
+      localStorage.setItem("mamaEarthCartCount",count);
+      displayCount.innerText=count;
+     window.alert("you have a product");
     })
 
     box.append(img, name,btn1, allPrice, btnBestDealer);
@@ -325,6 +336,10 @@ colorRange.map(function (elem) {
   colorcare.addEventListener("click", function(){
     console.log("in function");
    addtocartColorCare(elem);
+   count++;
+      localStorage.setItem("mamaEarthCartCount",count);
+      displayCount.innerText=count;
+   window.alert("you have a product");
   })
 
   box.append(img, name,btn1, priceTag, colorcare);
@@ -396,6 +411,10 @@ onionAddBtn.setAttribute("class","add");
 onionAddBtn.addEventListener("click", function(){
   console.log("in function");
  addtoCartOnion(elem);
+ count++;
+      localStorage.setItem("mamaEarthCartCount",count);
+      displayCount.innerText=count;
+ window.alert("you have a product");
 })
 
 box.append(img, name,btn1, priceTag, onionAddBtn);
@@ -467,6 +486,10 @@ vitaminCAddBtn.setAttribute("class","add");
 vitaminCAddBtn.addEventListener("click", function(){
   console.log("in function");
  addtoCartVitaminC(elem);
+ count++;
+      localStorage.setItem("mamaEarthCartCount",count);
+      displayCount.innerText=count;
+ window.alert("you have a product");
 })
 
 box.append(img, name,btn1, priceTag, vitaminCAddBtn);
@@ -537,7 +560,12 @@ ubtanAddBtn.setAttribute("class","add");
 
 ubtanAddBtn.addEventListener("click", function(){
   console.log("in function");
-  addtoCartUbtan(elem);
+ addtoCartUbtan(elem);
+ count++;
+      localStorage.setItem("mamaEarthCartCount",count);
+      displayCount.innerText=count;
+ 
+  window.alert("you have a product");
 })
 
 box.append(img, name,btn1, priceTag, ubtanAddBtn);
