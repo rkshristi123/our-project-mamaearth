@@ -1,12 +1,6 @@
 var count=localStorage.getItem("mamaEarthCartCount")||0;
 
-    var cartproducts=JSON.parse(localStorage.getItem("Cart"))||[];
-
-    var totalprice=0;
-    for(var i=0; i<cartproducts.length;i++){
-        var allprice=cartproducts[i].price;
-        totalprice=totalprice+Number(allprice);
-    }
+   
 
 var totalprice=localStorage.getItem("mamaearthTotalPrice");
     var orderedItems=JSON.parse(localStorage.getItem("Orders")) ||[];
@@ -39,6 +33,7 @@ var totalprice=localStorage.getItem("mamaearthTotalPrice");
 
             })
             console.log(orderedItems);
+           localStorage.setItem("mamaearthTotalPrice",0);
             //Storing data on local storage
             localStorage.setItem("Orders",JSON.stringify(orderedItems));
             alert("Congratulation! You have successfully registered.");

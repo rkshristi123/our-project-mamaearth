@@ -135,6 +135,10 @@
 #paymentMethod{
     padding-top: 40px;
     font-size: 20px;
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+    
     font-family: 'Roboto', sans-serif;
 }
 #pMethod{
@@ -171,11 +175,39 @@
 
 }
 
+#accNo{
+  width:50% ;
+}
+
+form{
+            font-size: 25px;
+            /* width: 99%; */
+        }
+        .input{
+            width: 250px;
+            height: 35px;
+            font-size: 18px;
+            margin-bottom: 20px;
+
+        }
+        #submit{
+            background-color: green;
+            color: white;
+            width: 150px;
+            margin-top: 40px;
+            height: 40px;
+            margin-left: 20px;
+            border-radius: 10px;
+        }
+        
+
 #centerRight{
    width: 44%;
    height: 500px;
    border: 1px solid lightgray; 
 }
+
+        
 
 
 </style>
@@ -250,7 +282,7 @@
             </div> <!-- end of delevery address------------------ -->
             
             <div id="typeAddress"> <!-- start of address type------------------ -->
-                Select the type of the Address
+              <p>Select the type of the Address</p> 
             <div>
                 <div id="homeAddress">Home</div>
                <div id="workAddress" >Work</div>
@@ -258,8 +290,9 @@
             </div>
                
             </div> <!-- end of address type------------------ -->
+<p> Choose payment method</p>
             <div id="paymentMethod">
-                Choose payment method
+               
               <div id="pMethod">
                   <div id="upi"> <input type="radio"  name="payOption" value="UPI"/> &nbsp;UPI</div>
                   <div><input type="radio" name="payOption" value="Credit/Debit Car"/> &nbsp;Credit/Debit Card</div>
@@ -267,7 +300,26 @@
                   <div><input type="radio" name="payOption" value="Wallets"/>&nbsp; Wallets</div>
                   <div id="cod"><input type="radio"  name="payOption" value="Cash on Delivery"/> &nbsp;Cash on Delivery</div>
               </div>
-              <div></div>
+              <div id="accNo">
+
+                <form action="">
+                  <label for="name">Card Number</label><br/>
+                  <input class="input" type="number" placeholder="Enter card number" id="number" required/><br/>
+      
+                  <label for="email">CVV</label><br/>
+                  <input class="input" type="number" placeholder="Enter CVV" id="cvv" required/><br/>
+      
+                  <label for="pass">Card Holder Name</label><br/>
+                  <input class="input" type="date" placeholder="Expiry date" id="exp" required/><br/>
+      
+                  <label for="pass">Card Holder Name</label><br/>
+                  <input class="input" type="text" placeholder="Card holder Name" id="name" required/><br/>
+                  
+                  <input class="input" type="submit" id="submit" value="Submit"/>
+              </form>
+
+
+              </div>
             </div>
         </form>
     </div>
