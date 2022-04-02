@@ -91,7 +91,10 @@
        
         delproduct.addEventListener("click",function(){
             deleteFromCart(elem,index);
-            count--;
+            if(count>0){
+                count--;
+            }
+            
             localStorage.setItem("mamaEarthCartCount", count);
 
             totalprice=totalprice-(Number(elem.price)*quantity.innerText);

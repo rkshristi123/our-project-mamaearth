@@ -5,6 +5,8 @@ var count=localStorage.getItem("mamaEarthCartCount")||0;
 var totalprice=localStorage.getItem("mamaearthTotalPrice");
     var orderedItems=JSON.parse(localStorage.getItem("Orders")) ||[];
 
+    console.log(count,totalprice);
+
     document.querySelector("form").addEventListener("submit", checkoutFunction);
     function checkoutFunction(){
         event.preventDefault();
@@ -27,13 +29,10 @@ var totalprice=localStorage.getItem("mamaearthTotalPrice");
        }
       var otp=prompt("The OTP has bees sent to your registered mob. number, Please enter the otp");
       if(otp==1234){
-            addedIntoKart.map(function(elem){
-                orderedItems.push(elem);
-                return orderedItems;
-
-            })
             console.log(orderedItems);
            localStorage.setItem("mamaearthTotalPrice",0);
+        //    localStorage.setItem("mamaEarthCartCount",0);
+
             //Storing data on local storage
             localStorage.setItem("Orders",JSON.stringify(orderedItems));
             alert("Congratulation! You have successfully registered.");
@@ -44,3 +43,4 @@ var totalprice=localStorage.getItem("mamaearthTotalPrice");
             alert("Oops! you have entered wrong otp");
         }
     }
+    console.log(count,totalprice);
