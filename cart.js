@@ -122,6 +122,8 @@
 
     // show cart price***************
 
+    var shippingCharge=0;
+    var discountOfCoupan=0;
     var msg=document.querySelector("#cartHerder");
     var totalItemPrice=document.querySelector("#totalItemPrice");
     totalItemPrice.innerText=Number(priceval.innerText);
@@ -131,11 +133,14 @@
     if(Number(priceval.innerText)>=399){
         msg.innerText="Congrats, Your Order is Eligible for FREE Shipping";
         shippingCost.innerText=0;
+        shippingCharge=shippingCost.innerText;
     }
     else if(Number(priceval.innerText)<399 && Number(priceval.innerText)>1){
         var remaining=399-priceval.innerText;
         msg.innerText="Shop for Rs"+" "+ remaining +" "+"more to Avail Free Shipping";
+        
         shippingCost.innerText=40;
+        shippingCharge=shippingCost.innerText;
         var priceWithShippingCharge=Number(total.innerText);
         total.innerText=priceWithShippingCharge+40;
     }
@@ -157,9 +162,11 @@
         var discount=newtotalPrice*30/100;
         total.innerText=newtotalPrice-discount;
         copdiscount.innerText=discount;
+        discountOfCoupan=copdiscount.innerText;
+        console.log(copdiscount.innerText);
       }
     }
-
+    console.log(discountOfCoupan);
     var onlinePaymentDiscount=Number(total.innerText);
     
     var paydiscount=onlinePaymentDiscount*5/100;
@@ -175,14 +182,6 @@
         localStorage.setItem("mamaearthTotalPrice",total.innerText);
         window.location.href="paymentPage.html";
     }
-      
-    var savedMoney=0;
-    if(shippingCost.innerText==0){
-        savedMoney=Number(copdiscount.innerText)+40;
-        document.querySelector("#savedPrice").innerText=savedMoney;
-    }
-    else{
-        savedMoney=Number(copdiscount.innerText);
-        document.querySelector("#savedPrice").innerText=savedMoney;
-    }
+        document.querySelector("#savedPrice").innerText=Number(discountOfCoupan)+Number(shippingCharge);
+    
     
