@@ -1,6 +1,8 @@
 
 
+
     var count=localStorage.getItem("mamaEarthCartCount")||0;
+
 
     var cartproducts=JSON.parse(localStorage.getItem("Cart"))||[];
 
@@ -10,7 +12,9 @@
         totalprice=totalprice+Number(allprice);
     }
 
+
     var total=document.querySelector("#allprice");
+
     total.innerText=totalprice;
 
     var priceval=document.querySelector("#priceVal");
@@ -57,6 +61,7 @@
                 quantity.innerText=qty;
                 totalprice=totalprice+(Number(elem.price));
                 total.innerText=totalprice;
+                priceval.innerText=total.innerText;
                 console.log(totalprice);
                 qtyPrice=Number(elem.price)*(qty-1);
                 price.innerText=Number(elem.price)+qtyPrice;
@@ -72,6 +77,7 @@
                     console.log(totalprice);
                     totalprice=totalprice-Number(elem.price);
                     total.innerText=totalprice;
+                    priceval.innerText=total.innerText;
                     console.log(totalprice);
                     qtyPrice=Number(elem.price)*(qty-1);
                     price.innerText=Number(elem.price)+qtyPrice;
@@ -92,11 +98,13 @@
         delproduct.addEventListener("click",function(){
             deleteFromCart(elem,index);
             count--;
+
             localStorage.setItem("mamaEarthCartCount", count);
 
             totalprice=totalprice-(Number(elem.price)*quantity.innerText);
             total.innerText=totalprice;
            
+
         });
         console.log(totalprice);
         var itemMgmtDiv=document.createElement("div");
@@ -118,6 +126,7 @@
         localStorage.setItem("Cart",JSON.stringify(cartproducts));
         window.location.reload();
     }
+
 
 
     // show cart price***************
@@ -169,9 +178,11 @@
     var perDis=document.querySelector("#percentDis");
     perDis.style.color="green";
 
+
     var procedTopay=document.querySelector("#proceedPay");
     procedTopay.addEventListener("click", paymentpage);
     function paymentpage(){
+
         localStorage.setItem("mamaearthTotalPrice",total.innerText);
         window.location.href="paymentPage.html";
     }
@@ -186,3 +197,4 @@
         document.querySelector("#savedPrice").innerText=savedMoney;
     }
     
+
