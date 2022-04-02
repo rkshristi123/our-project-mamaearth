@@ -327,7 +327,7 @@ body{
     align-items: center;
 }
 .happyMsg{
-    width: 80%;
+    width: atuo;
     height: 50px;
     margin: auto;
     border-radius: 10px;
@@ -354,10 +354,12 @@ body{
 }
 #percentDis{
     color: #82c341;
+    
 }
 
 #savedPrice{
     color:#82c341 ;
+    margin-right: 10px;
 }
 #priceSection>#proceedPay{
     background-color: #00afef;

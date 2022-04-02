@@ -33,19 +33,21 @@
    
 }
 #container1 {
-   width:90%;
+   width:80%;
    margin: auto;
 display: grid;
 grid-template-columns: repeat(4, 1fr);
 grid-template-rows: auto;
-gap: 12px;
+gap: 14px;
 padding-top:50px ;
-margin:auto;
+
 }
 .one{
  text-align:center;
-border:"0.5px dotted rgb(223, 213, 213)";
+ border: 1px solid ;
+border-color: lightgray;
 padding-bottom: 10px;
+height: auto;
 
 }   
 .btn{
@@ -58,7 +60,7 @@ padding-bottom: 10px;
 }
 .pr{
  color:rgb(54, 49, 49);
- font-size: 24px;
+ font-size: 18px;
  font-weight: bold;
 }
 .name{
