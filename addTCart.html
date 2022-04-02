@@ -84,27 +84,30 @@
             </div>
             <div class="des">
                 <div>Order Total</div>
-                <div class="price"> ₹ <p>249.00</p></div>
+                <div class="price"> ₹ <p id="priceVal"></p></div>
             </div>
-            <div class="des">
-                <div>Items Discount</div>
-                <div class="price"> <p>0.00</p></div>
-            </div>
+            
             <div class="des">
                 <div>Item Total</div>
-                <div class="price">₹<p>249.00</p></div>
+                <div class="price">₹<p id="itemTotal"></p></div>
             </div>
             <div class="des">
                 <div>Coupon Discount</div>
-                <div class="price"><p>0.00</p></div>
+                <div class="price">₹<p id="discount">0.00</p></div>
             </div>
             <div class="des">
                 <div>Shipping</div>
-                <div class="price">₹<p>40</p></div>
+                <div class="price">₹<p id="shippingCharge">)</p></div>
             </div>
             <div class="des">
                 <div>5% online payment discount</div>
-                <div class="price">-₹<p>12.45</p></div>
+                <div class="price"><p class="rupees">-₹</p><p id="onpaydis"></p></div>
+            </div>
+            <div class="savedMoneyMsg">
+                <div id="happyMsg">
+                    <p id="currency">₹</p> You saved <p class="rupees">₹</p><p id="savedMoney"></p>On this order
+                </div>
+                
             </div>
             <div id="proceedPay">
                 <div>PROCEED TO PAY</div>
@@ -115,6 +118,5 @@
     </div>
 </body>
 </html>
-<script src="cart.js">
-    
-</script> 
+<script src="cart.js"></script>
+<script src="header.js"></script> 

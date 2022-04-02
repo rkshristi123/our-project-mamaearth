@@ -1,11 +1,4 @@
-var procedTopay=document.querySelector("#proceedPay");
-    procedTopay.addEventListener("click", paymentpage);
-    function paymentpage(){
-        window.location.href="paymentPage.html";
-    }
-
-
-
+var count=localStorage.getItem("mamaEarthCartCount");
     var cartproducts=JSON.parse(localStorage.getItem("Cart"))||[];
 
     var totalprice=0;
@@ -13,7 +6,6 @@ var procedTopay=document.querySelector("#proceedPay");
         var allprice=cartproducts[i].price;
         totalprice=totalprice+Number(allprice);
     }
-console.log("js working");
     var total=document.querySelector("#allItemprice");
     total.innerText=totalprice;
 
@@ -61,6 +53,7 @@ console.log("js working");
                 quantity.innerText=qty;
                 totalprice=totalprice+(Number(elem.price));
                 total.innerText=totalprice;
+                priceval.innerText=total.innerText;
                 console.log(totalprice);
                 qtyPrice=Number(elem.price)*(qty-1);
                 price.innerText=Number(elem.price)+qtyPrice;
@@ -76,6 +69,7 @@ console.log("js working");
                     console.log(totalprice);
                     totalprice=totalprice-Number(elem.price);
                     total.innerText=totalprice;
+                    priceval.innerText=total.innerText;
                     console.log(totalprice);
                     qtyPrice=Number(elem.price)*(qty-1);
                     price.innerText=Number(elem.price)+qtyPrice;
@@ -95,8 +89,12 @@ console.log("js working");
        
         delproduct.addEventListener("click",function(){
             deleteFromCart(elem,index);
+            count--;
+            localStorage.setItem("mamaEarthCartCount",count);
             totalprice=totalprice-(Number(elem.price)*quantity.innerText);
             total.innerText=totalprice;
+            priceval.innerText=total.innerText;
+            
         });
         console.log(totalprice);
         var itemMgmtDiv=document.createElement("div");
@@ -117,4 +115,58 @@ console.log("js working");
         cartproducts.splice(index,1);
         localStorage.setItem("Cart",JSON.stringify(cartproducts));
         window.location.reload();
+    }
+
+console.log(total.innerText);
+    
+    var itemPrice=document.querySelector("#itemTotal");
+    itemPrice.innerText=priceval.innerText;
+    var msg=document.querySelector("#cartHerder");
+
+    var shipingcharge=document.querySelector("#shippingCharge");
+    if(Number(priceval.innerText)>=399){
+        msg.innerText="Congrats, Your Order is Eligible for FREE Shipping";
+        shipingcharge.innerText=0;
+    }
+    else if(Number(priceval.innerText)<399 && Number(priceval.innerText)>=1) {
+        var remaining=399-priceval.innerText;
+        msg.innerText="Shop for Rs"+" "+ remaining +" "+"more to Avail Free Shipping";
+        shipingcharge.innerText=40;
+        total.innerText=Number(total.innerText)+40;
+    }
+
+    var newtotalPrice=priceval.innerText;
+    var coupanDiscount=document.querySelector("#discount");
+    document.querySelector("#apply").addEventListener("click", appliedCoupan);
+    function appliedCoupan(){
+      var coupanCode=document.querySelector("#coupanInput").value;
+      var countCoupan=0;
+      if(countCoupan==1){
+          alert("you have already applied coupan");
+      }
+      else if(coupanCode=="masai30"){
+        var discount=newtotalPrice*30/100;
+        coupanDiscount.innerText=discount;
+        total.innerText=Number(total.innerText)-discount;
+      }
+    }
+   var onlinepaymentDiscount=Number(total.innerText)*5/100;
+   document.querySelector("#onpaydis").innerText=onlinepaymentDiscount;
+
+    var savedMoney=0;
+    console.log(typeof(shipingcharge.innerText));
+    if(shipingcharge.innerText==0){
+        savedMoney= Number(coupanDiscount.innerText)+40;
+        document.querySelector("#savedMoney").innerText=savedMoney;
+    }
+    else{
+        savedMoney= Number(coupanDiscount.innerText);
+        document.querySelector("#savedMoney").innerText=savedMoney;
+    }
+    
+
+    var procedTopay=document.querySelector("#proceedPay");
+    procedTopay.addEventListener("click", paymentpage);
+    function paymentpage(){
+        window.location.href="paymentPage.html";
     }

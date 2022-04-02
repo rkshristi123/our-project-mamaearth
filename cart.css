@@ -186,3 +186,42 @@ body{
     font-family: 'Roboto', sans-serif;
     cursor: pointer;
 }
+.savedMoneyMsg{
+    border: none;
+    padding-top: 20px;
+}
+#happyMsg{
+    width: auto;
+    height: 50px;
+    padding-left: 13%;
+    padding-right: 13%;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f9e8;
+
+}
+#currency{
+    width: 30px;
+    height: 28px;
+    background-color: #75ba75;
+    color: white;
+    font-size: 20px;
+    border-radius: 50px;
+    margin-right: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rupees{
+    color: #75ba75;
+    margin-left: 10px; 
+}
+#savedMoney{
+    color: #75ba75;
+    margin-right: 10px; 
+}
