@@ -299,10 +299,12 @@ priceTag.style.display="flex";
 priceTag.style.justifyContent="center";
 priceTag.style.alignItems="center";
 priceTag.style.fontSize="18px";
-var currency=document.createElement("h3");
+var currency=document.createElement("p");
+currency.setAttribute("class","pricetag");
 currency.innerText="₹";
 
-var price=document.createElement("h3")
+var price=document.createElement("p");
+price.setAttribute("class","pricetag");
 price.innerText=elem.price;
 
 priceTag.append(currency,price);
