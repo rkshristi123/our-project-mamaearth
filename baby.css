@@ -89,6 +89,9 @@ background-color:white ;
  text-align: center;
  font-size: 18px;
 }
+#sri>h2{
+  margin-left: 100px;
+}
 
 .prod{
    display: flex;
