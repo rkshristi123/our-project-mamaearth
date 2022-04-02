@@ -1,3 +1,156 @@
+/* header css */
+.cartHeader{
+    width: 100%;
+    background-color: white;
+}
+#red{
+    width: inherit;
+    display: flex;
+    -webkit-box-pack: justify;
+    padding-left: 40px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    background-color: #d4424c;
+    color: white;
+    height: 34px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#red>a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+}
+#red>a>img{
+    height: 30px;
+}
+
+#midheader{
+    width: 90%;
+    margin: auto;
+    height: 70px;
+    
+    display: flex;
+    padding-left: 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+#imSearch{
+    width: 63%;
+    display: flex;
+    padding-left: 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+}
+#imSearch>img{
+    width: 170px; 
+    height: 55%;
+}
+#searchSection{
+    width: 75%;
+    /* border: 1px solid ;
+    border-color: lightgrey; */
+    border-radius: 5px;
+}
+#searchSection>#searchBox{
+    width: 79%;
+    height:40px;
+    border: none;
+    border: 1px solid;
+    border-color: lightgray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 18px;
+}
+
+#search{
+    height: 40px;
+    width: 19%;
+    margin-left:-5px;
+    border: none;
+    padding: none;
+    background-color: #00afef;
+    color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 18px;
+}
+#profileSection{
+    width: 13%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+a:hover{
+    text-decoration: none;
+}
+#profileSection>.cartLogin{
+    width: 50%;
+    display: flex;
+}
+#profileSection>.cartLogin>a>div{
+   display: flex;
+    
+    font-size: 18px;
+    color: gray;
+    text-decoration: none;
+} 
+#profileSection>.cartLogin>a>div>p{
+    font-size: 9px;
+    width: 14px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: green ;
+    color: white;
+}
+#profileSection>.cartLogin>a>div>i{
+    font-size: 24px;
+    color: #00afef;
+}
+/* Login Section css */
+#profileSection>a>div{
+    font-size: 18px;
+    color: gray;
+    text-decoration: none;
+} 
+#profileSection>a>div>p{
+    font-size: 8px;
+    border-radius: 2px;
+    background-color: green ;
+    color: white;
+}
+#profileSection>a>div>i{
+    font-size: 24px;
+    color: #00afef;
+}
+/* navbar-------------------------------- */
+#navbarStart{
+    height: 40px;
+    border-top: 1px solid lightgray ;
+    width: 100%;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+#navbarStart>div{
+    height: inherit;
+    width: 65%;
+    margin-left: 5%;
+    display: flex;
+    padding-left: 20px;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: #6f7d98;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+/* end of heade css */
 body{
     font-family: 'Lato', sans-serif; 
     line-height: 25px;
@@ -97,7 +250,7 @@ body{
 }
 
 #deleteItemBtn{
-    height: 40px;
+    height: 30px;
     width: 30px;
     
 }
@@ -172,6 +325,41 @@ body{
 #priceSection>.des>.price{
     display: flex;
     align-items: center;
+}
+.happyMsg{
+    width: atuo;
+    height: 50px;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+   justify-content: center;
+   box-sizing: border-box;
+   padding-left: 15%;
+   padding-right: 15%;
+   background-color: #f2f9e8;
+   font-size: 17px;
+   font-weight: bold;
+}
+#currency{
+    margin-right: 20px;
+    height: 30px;
+    font-size: 20px;
+    width: 30px;
+    border-radius: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #82c341;
+}
+#percentDis{
+    color: #82c341;
+    
+}
+
+#savedPrice{
+    color:#82c341 ;
+    margin-right: 10px;
 }
 #priceSection>#proceedPay{
     background-color: #00afef;

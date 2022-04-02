@@ -257,12 +257,12 @@ var addToCart=JSON.parse(localStorage.getItem("Cart"))||[];
 
 beautyData.map(function (elem) {
 var box = document.createElement("div");
-box.style.border="0.5px dotted rgb(223, 213, 213)"
 box.setAttribute("class","one")
 
 var img = document.createElement("img");
 img.src = elem.image;
-
+img.style.width="100%";
+img.style.height="55%";
 var name = document.createElement("p");
 name.textContent = elem.name;
 name.setAttribute("class","name")
@@ -274,14 +274,11 @@ name.setAttribute("class","name")
      priceTag.style.display="flex";
      priceTag.style.justifyContent="center";
      priceTag.style.alignItems="center";
-     priceTag.style.fontSize="20px";
      var currency=document.createElement("p");
      currency.setAttribute("id","para");
      currency.innerText="₹";
-     currency.style.fontSize="20px";
 var price = document.createElement("p");
 price.innerText = elem.price;
-price.style.fontSize= "20px"
 price.setAttribute("class","pr")
 priceTag.append(currency,price);
 var btn2 = document.createElement("button");
