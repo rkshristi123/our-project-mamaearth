@@ -160,19 +160,23 @@
     function appliedCoupan(){
       var coupanCode=document.querySelector("#coupanInput").value;
       var coupanCount=0;
-      if(coupanCount==1){
-          alert("you have alreasy applied coupan");
+      if(coupanCount<1){
+        if(coupanCode=="masai30"){
+            coupanCount++;
+            var discount=newtotalPrice*30/100;
+            total.innerText=newtotalPrice-discount;
+            copdiscount.innerText=discount;
+    
+            savedMomey.innerText=Number(savedMomey.innerText)+discount;
+    
+            discountOfCoupan=copdiscount.innerText;
+          } 
+          else{
+              alert("Please enter the right coupon code");
+          } 
       }
-      else if(coupanCode=="masai30"){
-        coupanCount++;
-        var discount=newtotalPrice*30/100;
-        total.innerText=newtotalPrice-discount;
-        copdiscount.innerText=discount;
-
-        savedMomey.innerText=Number(savedMomey.innerText)+discount;
-
-        discountOfCoupan=copdiscount.innerText;
-        console.log(copdiscount.innerText);
+      else if(count==1 && coupanCode=="masai30" ){
+          alert("you have used this coupon once");
       }
     }
    
