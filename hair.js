@@ -235,3 +235,4 @@ function addtocart(elem){
   addToCart.push(elem);
   localStorage.setItem("Cart",JSON.stringify(addToCart));
 }
+ 
