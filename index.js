@@ -186,7 +186,7 @@ var bestSellers=[{
       localStorage.setItem("mamaEarthCartCount",count);
       displayCount.innerText=count;
     
-     window.alert("you have a product");
+     
     })
 
     box.append(img, name,btn1, priceTag, btn2);
@@ -258,7 +258,7 @@ bestDeals.map(function (elem) {
      count++;
       localStorage.setItem("mamaEarthCartCount",count);
       displayCount.innerText=count;
-     window.alert("you have a product");
+     
     })
 
     box.append(img, name,btn1, allPrice, btnBestDealer);
@@ -339,7 +339,7 @@ colorRange.map(function (elem) {
    count++;
       localStorage.setItem("mamaEarthCartCount",count);
       displayCount.innerText=count;
-   window.alert("you have a product");
+ 
   })
 
   box.append(img, name,btn1, priceTag, colorcare);
@@ -414,7 +414,7 @@ onionAddBtn.addEventListener("click", function(){
  count++;
       localStorage.setItem("mamaEarthCartCount",count);
       displayCount.innerText=count;
- window.alert("you have a product");
+
 })
 
 box.append(img, name,btn1, priceTag, onionAddBtn);
@@ -489,7 +489,7 @@ vitaminCAddBtn.addEventListener("click", function(){
  count++;
       localStorage.setItem("mamaEarthCartCount",count);
       displayCount.innerText=count;
- window.alert("you have a product");
+
 })
 
 box.append(img, name,btn1, priceTag, vitaminCAddBtn);
@@ -565,7 +565,6 @@ ubtanAddBtn.addEventListener("click", function(){
       localStorage.setItem("mamaEarthCartCount",count);
       displayCount.innerText=count;
  
-  window.alert("you have a product");
 })
 
 box.append(img, name,btn1, priceTag, ubtanAddBtn);
