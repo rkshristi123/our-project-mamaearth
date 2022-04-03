@@ -235,21 +235,4 @@ function addtocart(elem){
   addToCart.push(elem);
   localStorage.setItem("Cart",JSON.stringify(addToCart));
 }
-sorted=JSON.parse(localStorage.getItem())
-function Sortprice() {
-  var selected = document.querySelector("#sort").value;
-  console.log(selected);
-  if (selected == "htl") {
-    appliedJobs.sort(function (a, b) {
-      return b.price - a.price;
-    });
-
-  }
-
-  if (selected == "lth") {
-    appliedJobs.sort(function (a, b) {
-      return a.price - b.price;
-    });
-   
-  }
-}
+ 
