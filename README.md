@@ -9,7 +9,7 @@ blog link:
 _A product-based e-commerce website selling baby care, skin care, and hair care products.
 
 
-> After go to your browser and type `` and you are ready to run and explore our project.
+> After go to your browser and type `https://jocular-faun-39bb45.netlify.app/` and you are ready to run and explore our project.
 
 ---
 
@@ -42,28 +42,24 @@ _A product-based e-commerce website selling baby care, skin care, and hair care 
 ### _Following are the Screenshots for the reference_
 
 - **Landing Page**
-  ![Landing Page](https://miro.medium.com/max/1050/0*rTJSAAsm2zgq5STW.png)
+  ![Landing Page](https://i.postimg.cc/XJRdLxFK/Screenshot-213.png)
 
 - **Sign-Up Page**
 
   ![Landing Page](https://miro.medium.com/max/1050/0*H1nWFxQbtqIUY_Hj.png)
 
-- **Products Page**
+- ** Payment Page**
 
-  ![Landing Page](https://miro.medium.com/max/1050/0*jEla0TrEpYfeggKW.png)
-
-- **Cart & Payment Page**
-
-  ![Landing Page](https://miro.medium.com/max/1050/0*kQ2sRx8dyoPaHrSO.png)
+  ![Landing Page](https://i.postimg.cc/xdkWbTPk/Screenshot-256.png)
 
 
-- **Profile Page**
+- **All Product Page**
 
-  ![Landing Page](https://miro.medium.com/max/1050/0*wBZDAXwqubMhdd9P.png)
+  ![Landing Page](https://i.postimg.cc/yxnfbwP4/Screenshot-255.png)
 
 - **Footer**
 
-  ![Landing Page](https://miro.medium.com/max/1050/0*QElmBDQqab4SP4Al.png)
+  ![Landing Page](https://i.postimg.cc/RZPWZGPS/Screenshot-258.png)
 
 ---
 
@@ -79,5 +75,5 @@ https://medium.com/@alishamohasin85/our-first-collabrative-project-at-masai-scho
 
 
 ### Netlify Link
-https://mamaearth-replica.netlify.app
+https://jocular-faun-39bb45.netlify.app/
 
