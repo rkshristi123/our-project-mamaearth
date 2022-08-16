@@ -19,7 +19,7 @@ _A product-based e-commerce website selling baby care, skin care, and hair care 
 - **[Alisha mohshin]()**
 - **[Chandani chandra]()**
 - **[Amit Kumar]()**
-- **[Uday Kumar()**
+- **[Uday Kumar]()**
 
 ---
 
