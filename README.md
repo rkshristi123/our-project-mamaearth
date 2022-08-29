@@ -42,7 +42,8 @@ _A product-based e-commerce website selling baby care, skin care, and hair care 
 ### _Following are the Screenshots for the reference_
 
 - **Landing Page**
-  ![Landing Page](https://i.postimg.cc/XJRdLxFK/Screenshot-213.png)
+
+  ![Landing Page](https://i.postimg.cc/WzSdLBK9/Screenshot-213.png)
 
 - **Log-in Page**
 
