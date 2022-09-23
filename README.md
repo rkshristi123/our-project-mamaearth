@@ -16,7 +16,7 @@ _A product-based e-commerce website selling baby care, skin care, and hair care 
 ### Team Members
 
 - **[Shristi kumari]()**
-- **[Alisha mohshin]()**
+- **[Alisha mohasin]()**
 - **[Chandani chandra]()**
 - **[Amit Kumar]()**
 - **[Uday Kumar]()**
